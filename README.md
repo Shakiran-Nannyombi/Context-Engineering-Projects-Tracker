@@ -38,7 +38,7 @@ This repository is my public **portfolio** + **project management hub** for all 
   <tr>
     <td valign="middle">
       <p>I manage progress using GitHub Projects.</p>
-      <p>👉 <strong>Vibecode Roadmap Board:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">https://github.com/users/Shakiran-Nannyombi/projects/4</a></p>
+      <p>👉 <strong>Vibecode Roadmap Board:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">@Vibecode Roadmap</a></p>
     </td>
      <td valign="top" width="140">
       <img src="assets/devK.png" alt="Shakiran's profile" width="160" />
