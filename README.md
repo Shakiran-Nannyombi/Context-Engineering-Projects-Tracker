@@ -1,7 +1,4 @@
-<!-- Banner -->
-<p align="center">
-  <img src="assets/banner.png" alt="Vibecode Hub Banner" width="100%" />
-</p>
+<br><br>
 
 <h1 align="center">Vibecode Hub 💜</h1>
 
@@ -14,18 +11,18 @@
   <img src="https://readme-typing-svg.herokuapp.com?size=24&duration=2500&color=9B5DE5&center=true&vCenter=true&width=700&lines=Welcome+to+my+Vibecode+Hub+%F0%9F%92%9C;Android+%7C+Web+%7C+Python+%7C+AI+%7C+Bitcoin;Building+projects+one+commit+at+a+time;Prompt+Engineering+Mastery+%F0%9F%8E%93" />
 </p>
 
----
-
 ## About Me
+
 Hi! I’m **Shakiran Nannyombi** — a developer building projects across **Android**, **Web**, **Python**, **AI**, and **Bitcoin**.
 
 This repository is my public **portfolio** + **project management hub** for all my vibecoded projects.
 
 ## Featured Projects
+>
 > (I’ll update these as I finish more projects)
 
 - **Coming Soon** -> Still cooking 😂
-- 
+-
 
 ## Projects Tracker
 
@@ -36,13 +33,21 @@ This repository is my public **portfolio** + **project management hub** for all 
 | Coming soon | Bitcoin/Research | 💡 Idea | (link) |
 
 ## Project Roadmap Board
-I manage progress using GitHub Projects.
 
-👉 **Vibecode Roadmap Board:** (paste your board link here)
-
----
+<table>
+  <tr>
+    <td valign="middle">
+      <p>I manage progress using GitHub Projects.</p>
+      <p>👉 <strong>Vibecode Roadmap Board:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">https://github.com/users/Shakiran-Nannyombi/projects/4</a></p>
+    </td>
+     <td valign="top" width="140">
+      <img src="assets/devK.png" alt="Shakiran's profile" width="160" />
+    </td>
+  </tr>
+</table>
 
 ## Tech Stack
+
 <p>
   <img src="https://img.shields.io/badge/Kotlin-9B5DE5?style=for-the-badge&logo=kotlin&logoColor=white"/>
   <img src="https://img.shields.io/badge/Jetpack%20Compose-9B5DE5?style=for-the-badge&logo=android&logoColor=white"/>
@@ -55,11 +60,13 @@ I manage progress using GitHub Projects.
 </p>
 
 ## Vibecode Energy
+
 <p align="center">
-  ![Demo](assets/gifs/cooking.gif)
-  *Always Cooking*
+  <img src="assets/gifs/cooking.gif" alt="Always Cooking" width="400"/>
+  <br/>
+  <i>Always Cooking</i>
 </p>
 
 ## Contact
-If you’d like to collaborate or build something cool together, feel free to reach out 💜
 
+If you’d like to collaborate or build something cool together, feel free to reach out 💜
