@@ -1,6 +1,9 @@
 <br><br>
 
 <h1 align="center">Vibecode Hub 💜</h1>
+ <p align="center">
+   <img src="assets/devK.png" alt="Shakiran's profile" width="160" />
+ </p>
 
 <p align="center">
   <b>Portfolio + Project Tracker</b><br/>
@@ -34,17 +37,9 @@ This repository is my public **portfolio** + **project management hub** for all 
 
 ## Project Roadmap Board
 
-<table>
-  <tr>
-    <td valign="middle">
-      <p>I manage progress using GitHub Projects.</p>
-      <p>👉 <strong>Vibecode Roadmap Board:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">@Vibecode Roadmap</a></p>
-    </td>
-     <td valign="top" width="140">
-      <img src="assets/devK.png" alt="Shakiran's profile" width="160" />
-    </td>
-  </tr>
-</table>
+  <p align="center">
+    I manage progress using GitHub Projects.</p>
+  <p>👉 <strong>Vibecode Roadmap Board:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">@Vibecode Roadmap</a></p>
 
 ## Tech Stack
 
