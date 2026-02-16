@@ -21,14 +21,11 @@ Hi! I’m **Shakiran Nannyombi** — a developer building projects across **Andr
 
 This repository is my public **portfolio** + **project management hub** for all my vibecoded projects.
 
----
-
 ## Featured Projects
 > (I’ll update these as I finish more projects)
 
 - **Coming Soon** -> Still cooking 😂
 - 
----
 
 ## Projects Tracker
 
@@ -37,8 +34,6 @@ This repository is my public **portfolio** + **project management hub** for all 
 | Coming soon | AI | ✅ Done | (link) |
 | Coming soon | Android | 🧱 Building | (link) |
 | Coming soon | Bitcoin/Research | 💡 Idea | (link) |
-
----
 
 ## Project Roadmap Board
 I manage progress using GitHub Projects.
@@ -59,14 +54,11 @@ I manage progress using GitHub Projects.
   <img src="https://img.shields.io/badge/Docker-9B5DE5?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
----
-
 ## Vibecode Energy
 <p align="center">
-  <img src="assets/gifs/coding.gif" width="350"/>
+  ![Demo](assets/gifs/cooking.gif)
+  *Always Cooking*
 </p>
-
----
 
 ## Contact
 If you’d like to collaborate or build something cool together, feel free to reach out 💜
