@@ -1,6 +1,6 @@
 <br><br>
 
-<h1 align="center">Vibecode Hub 💜</h1>
+<h1 align="center">Context Engineering Hub 💜</h1>
  <p align="center">
    <img src="assets/devK.png" alt="Shakiran's profile" width="160" />
  </p>
@@ -11,18 +11,20 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=24&duration=2500&color=9B5DE5&center=true&vCenter=true&width=700&lines=Welcome+to+my+Vibecode+Hub+%F0%9F%92%9C;Android+%7C+Web+%7C+Python+%7C+AI+%7C+Bitcoin;Building+projects+one+commit+at+a+time;Prompt+Engineering+Mastery+%F0%9F%8E%93" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=24&duration=2500&color=9B5DE5&center=true&vCenter=true&width=700&lines=Welcome+to+my+Context+Engineering+Hub+%F0%9F%92%9C;Android+%7C+Web+%7C+Python+%7C+AI+%7C+Bitcoin;Building+projects+one+commit+at+a+time;Prompt+Engineering+Mastery+%F0%9F%8E%93" />
 </p>
 
 ## About Me
 
-Hi! I’m **Shakiran Nannyombi** — a developer building projects across **Android**, **Web**, **Python**, **AI**, and **Bitcoin**.
+Hi! I'm **Shakiran Nannyombi** — a developer building projects across **Android**, **Web**, **Python**, **AI**, and **Bitcoin**.
 
-This repository is my public **portfolio** + **project management hub** for all my vibecoded projects.
+This repository is my public **portfolio** + **project management hub** for all my context-engineered projects.
+
+> **Note:** I'm not a "vibe coder" — that's way too far-fetched 😂. I prefer to call it **context engineering** because let's be real, we're crafting prompts and contexts, not vibes!
 
 ## Featured Projects
 >
-> (I’ll update these as I finish more projects)
+> (I'll update these as I finish more projects)
 
 - **Coming Soon** -> Still cooking 😂
 -
@@ -39,7 +41,7 @@ This repository is my public **portfolio** + **project management hub** for all 
 
   <p align="center">
     I manage progress using GitHub Projects.</p>
-  <p>👉 <strong>Vibecode Roadmap Board:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">@Vibecode Roadmap</a></p>
+  <p>👉 <strong>Context Engineering Roadmap:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">@Context Engineering Roadmap</a></p>
 
 ## Tech Stack
 
@@ -54,7 +56,7 @@ This repository is my public **portfolio** + **project management hub** for all 
   <img src="https://img.shields.io/badge/Docker-9B5DE5?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
-## Vibecode Energy
+## Context Engineering Energy
 
 <p align="center">
   <img src="assets/gifs/cooking.gif" alt="Always Cooking" width="400"/>
@@ -64,4 +66,4 @@ This repository is my public **portfolio** + **project management hub** for all 
 
 ## Contact
 
-If you’d like to collaborate or build something cool together, feel free to reach out 💜
+If you'd like to collaborate or build something cool together, feel free to reach out 💜
