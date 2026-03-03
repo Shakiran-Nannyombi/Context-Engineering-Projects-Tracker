@@ -21,7 +21,7 @@ This plan migrates the UI Garden project from GCP Docker-based deployment to Ver
     - Add rewrites rule for SPA routing: `{ "source": "/(.*)", "destination": "/index.html" }`
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5_
   
-  - [~]* 2.2 Verify vercel.json configuration validity
+  - [x] 2.2 Verify vercel.json configuration validity
     - Parse vercel.json to ensure valid JSON syntax
     - Verify all required fields are present
     - Verify rewrite rule is correctly formatted
@@ -66,7 +66,7 @@ This plan migrates the UI Garden project from GCP Docker-based deployment to Ver
     - _Requirements: 3.3, 5.4_
 
 - [ ] 5. Create validation tests for migration
-  - [~] 5.1 Write unit tests for file system changes
+  - [x] 5.1 Write unit tests for file system changes
     - Test that Dockerfile does not exist
     - Test that .dockerignore does not exist
     - Test that vercel.json exists and contains correct configuration
@@ -75,14 +75,14 @@ This plan migrates the UI Garden project from GCP Docker-based deployment to Ver
     - Test that README.md preserves existing sections
     - _Validates: Examples 1, 2, 7, 8_
   
-  - [ ] 5.2 Write integration tests for build workflow
+  - [x] 5.2 Write integration tests for build workflow
     - Test that npm install completes successfully
     - Test that npm run build generates dist/ directory with index.html
     - Test that public/ assets are copied to dist/
     - Test that npm run dev starts development server
     - _Validates: Examples 3, 4, 6_
   
-  - [ ] 5.3 Write tests for environment variable configuration
+  - [x] 5.3 Write tests for environment variable configuration
     - Test that vite.config.ts content is unchanged
     - Test that build process injects GEMINI_API_KEY correctly
     - _Validates: Example 5_
