@@ -26,14 +26,14 @@ This repository is my public **portfolio** + **project management hub** for all 
 >
 > (I'll update these as I finish more projects)
 
-- **Coming Soon** -> Still cooking 😂
+- **UI Garden: The Sentient Design Arcade** -> A gamified design playground with Gemini AI integration. Built with React, TypeScript, Vite, Framer Motion, and Gemini API. [Live Demo](https://ui-garden-orcin.vercel.app/) | [Repository](https://github.com/Shakiran-Nannyombi/ui-garden)
 -
 
 ## Projects Tracker
 
 | Project | Category | Status | Repo |
 |--------|----------|--------|------|
-| Coming soon | AI | ✅ Done | (link) |
+| [UI Garden](https://github.com/Shakiran-Nannyombi/ui-garden) | Web/AI | ✅ Done | [Repo](https://github.com/Shakiran-Nannyombi/ui-garden) |
 | Coming soon | Android | 🧱 Building | (link) |
 | Coming soon | Bitcoin/Research | 💡 Idea | (link) |
 
