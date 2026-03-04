@@ -171,6 +171,24 @@ function renderProjectCard(project) {
     // Create unique ID for description to use with aria-describedby
     const descriptionId = `project-desc-${project.name.toLowerCase().replace(/\s+/g, '-')}`;
 
+    // Add project image if available
+    if (project.image) {
+        const imageContainer = document.createElement('div');
+        imageContainer.className = 'project-card-image';
+
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = `${project.name} preview`;
+        img.loading = 'lazy';
+        img.onerror = function () {
+            // Hide image container if image fails to load
+            imageContainer.style.display = 'none';
+        };
+
+        imageContainer.appendChild(img);
+        card.appendChild(imageContainer);
+    }
+
     // Create card title
     const title = document.createElement('h3');
     title.textContent = project.name;
@@ -185,22 +203,47 @@ function renderProjectCard(project) {
     // Add aria-describedby to card to reference the description
     card.setAttribute('aria-describedby', descriptionId);
 
-    // Create card link
-    const link = document.createElement('a');
-    link.href = project.url;
-    link.textContent = 'View Project →';
-    link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer');
-    link.setAttribute('aria-label', `View ${project.name} project`);
+    // Create links container
+    const linksContainer = document.createElement('div');
+    linksContainer.className = 'project-card-links';
+
+    // Add live demo link if available
+    if (project.liveDemo) {
+        const liveDemoLink = document.createElement('a');
+        liveDemoLink.href = project.liveDemo;
+        liveDemoLink.textContent = '🚀 Live Demo';
+        liveDemoLink.className = 'project-link-demo';
+        liveDemoLink.setAttribute('target', '_blank');
+        liveDemoLink.setAttribute('rel', 'noopener noreferrer');
+        liveDemoLink.setAttribute('aria-label', `View live demo of ${project.name}`);
+
+        liveDemoLink.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            safeNavigate(project.liveDemo, card);
+        });
+
+        linksContainer.appendChild(liveDemoLink);
+    }
+
+    // Create repository link
+    const repoLink = document.createElement('a');
+    repoLink.href = project.url;
+    repoLink.textContent = '📦 Repository';
+    repoLink.className = 'project-link-repo';
+    repoLink.setAttribute('target', '_blank');
+    repoLink.setAttribute('rel', 'noopener noreferrer');
+    repoLink.setAttribute('aria-label', `View ${project.name} repository`);
 
     // Prevent link click from bubbling to card click and add error handling
-    link.addEventListener('click', (e) => {
+    repoLink.addEventListener('click', (e) => {
         e.stopPropagation();
         e.preventDefault();
         safeNavigate(project.url, card);
     });
 
-    card.appendChild(link);
+    linksContainer.appendChild(repoLink);
+    card.appendChild(linksContainer);
 
     // Add tags if present
     if (project.tags && Array.isArray(project.tags) && project.tags.length > 0) {
@@ -218,15 +261,18 @@ function renderProjectCard(project) {
     }
 
     // Add click handler to card for navigation with error handling
+    // Default to live demo if available, otherwise repository
     card.addEventListener('click', () => {
-        safeNavigate(project.url, card);
+        const targetUrl = project.liveDemo || project.url;
+        safeNavigate(targetUrl, card);
     });
 
     // Add keyboard navigation support with error handling
     card.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            safeNavigate(project.url, card);
+            const targetUrl = project.liveDemo || project.url;
+            safeNavigate(targetUrl, card);
         }
     });
 

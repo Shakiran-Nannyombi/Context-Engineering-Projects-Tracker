@@ -13,7 +13,8 @@
             ],
             "status": "Done",
             "category": "Web/AI",
-            "liveDemo": "https://ui-garden-orcin.vercel.app/"
+            "liveDemo": "https://ui-garden-orcin.vercel.app/",
+            "image": "https://raw.githubusercontent.com/Shakiran-Nannyombi/ui-garden/main/public/og-image.png"
         }
     ],
     "lastUpdated": "2024-12-19T00:00:00Z"
