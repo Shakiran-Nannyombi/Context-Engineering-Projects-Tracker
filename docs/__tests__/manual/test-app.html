@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App.js Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .pass {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .fail {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .error-message {
+            padding: 20px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>App.js Functionality Test</h1>
+    <div id="test-results"></div>
+    <div id="project-grid"></div>
+
+    <script src="app.js"></script>
+    <script>
+        const results = [];
+
+        function addResult(testName, passed, message) {
+            results.push({ testName, passed, message });
+            const div = document.createElement('div');
+            div.className = `test-result ${passed ? 'pass' : 'fail'}`;
+            div.textContent = `${passed ? '✓' : '✗'} ${testName}: ${message}`;
+            document.getElementById('test-results').appendChild(div);
+        }
+
+        // Test 1: validateProject with valid project
+        try {
+            const validProject = {
+                name: 'Test Project',
+                description: 'Test description',
+                url: 'https://github.com/test/project'
+            };
+            const result = validateProject(validProject);
+            addResult('validateProject - valid project', result === true, 'Should return true for valid project');
+        } catch (error) {
+            addResult('validateProject - valid project', false, error.message);
+        }
+
+        // Test 2: validateProject with missing name
+        try {
+            const invalidProject = {
+                description: 'Test description',
+                url: 'https://github.com/test/project'
+            };
+            const result = validateProject(invalidProject);
+            addResult('validateProject - missing name', result === false, 'Should return false for missing name');
+        } catch (error) {
+            addResult('validateProject - missing name', false, error.message);
+        }
+
+        // Test 3: validateProject with invalid URL
+        try {
+            const invalidUrlProject = {
+                name: 'Test Project',
+                description: 'Test description',
+                url: 'not-a-valid-url'
+            };
+            const result = validateProject(invalidUrlProject);
+            addResult('validateProject - invalid URL', result === false, 'Should return false for invalid URL');
+        } catch (error) {
+            addResult('validateProject - invalid URL', false, error.message);
+        }
+
+        // Test 4: loadProjects function
+        (async () => {
+            try {
+                const data = await loadProjects();
+                const hasProjects = Array.isArray(data.projects);
+                addResult('loadProjects - returns data', hasProjects, 'Should return object with projects array');
+
+                if (hasProjects && data.projects.length > 0) {
+                    const firstProject = data.projects[0];
+                    const hasRequiredFields = firstProject.name && firstProject.description && firstProject.url;
+                    addResult('loadProjects - project structure', hasRequiredFields, 'Projects should have required fields');
+                }
+            } catch (error) {
+                addResult('loadProjects', false, error.message);
+            }
+        })();
+
+        // Test 5: displayErrorMessage function
+        try {
+            displayErrorMessage('Test error message');
+            const errorDiv = document.querySelector('.error-message');
+            const hasError = errorDiv !== null;
+            addResult('displayErrorMessage', hasError, 'Should display error message in DOM');
+        } catch (error) {
+            addResult('displayErrorMessage', false, error.message);
+        }
+    </script>
+</body>
+
+</html>

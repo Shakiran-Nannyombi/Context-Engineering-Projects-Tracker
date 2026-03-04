@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "name": "UI Garden: The Sentient Design Arcade",
+            "description": "A gamified design playground with Gemini AI integration. Built with React, TypeScript, Vite, Framer Motion, and Gemini API.",
+            "url": "https://github.com/Shakiran-Nannyombi/ui-garden",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "TypeScript",
+                "Gemini"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://ui-garden-orcin.vercel.app/"
+        }
+    ],
+    "lastUpdated": "2024-12-19T00:00:00Z"
+}

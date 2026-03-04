@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Context Engineering Projects - A visual showcase of our projects">
+    <title>Context Engineering Projects</title>
+
+    <!-- Performance Optimizations -->
+    <!-- Preconnect to improve resource loading -->
+    <link rel="preconnect" href="https://github.com" crossorigin>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.min.css" as="style">
+    <link rel="preload" href="app.min.js" as="script">
+    <link rel="preload" href="projects.json" as="fetch" crossorigin>
+
+    <!-- Load minified CSS for faster parsing -->
+    <link rel="stylesheet" href="styles.min.css">
+
+    <!-- Inline critical CSS for above-the-fold content -->
+    <style>
+        /* Critical CSS for initial render - prevents FOUC */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column
+        }
+
+        header {
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 2rem 1.5rem;
+            text-align: center
+        }
+
+        header h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0
+        }
+
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem
+        }
+
+        .project-grid {
+            display: grid;
+            gap: 1.5rem;
+            width: 100%
+        }
+
+        @media(max-width:767px) {
+            .project-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(min-width:768px)and (max-width:1024px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(min-width:1025px) {
+            .project-grid {
+                grid-template-columns: repeat(3, 1fr)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Context Engineering Projects</h1>
+    </header>
+
+    <main>
+        <div id="project-grid" class="project-grid" role="list" aria-label="Context Engineering Projects">
+            <!-- Project cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/context-engineering/Context-Engineering-Projects-Tracker" target="_blank"
+                rel="noopener noreferrer">
+                View Repository on GitHub
+            </a>
+        </p>
+    </footer>
+
+    <!-- Load minified JavaScript with defer for better performance -->
+    <script src="app.min.js" defer></script>
+</body>
+
+</html>

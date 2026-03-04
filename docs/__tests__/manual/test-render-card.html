@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectCard Rendering Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .pass {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .fail {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        #project-grid {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px dashed #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ProjectCard Rendering Test</h1>
+    <div id="test-results"></div>
+    <h2>Rendered Card Preview:</h2>
+    <div id="project-grid"></div>
+
+    <script src="app.js"></script>
+    <script>
+        const results = [];
+
+        function addResult(testName, passed, message) {
+            results.push({ testName, passed, message });
+            const div = document.createElement('div');
+            div.className = `test-result ${passed ? 'pass' : 'fail'}`;
+            div.textContent = `${passed ? '✓' : '✗'} ${testName}: ${message}`;
+            document.getElementById('test-results').appendChild(div);
+        }
+
+        // Test project data
+        const testProject = {
+            name: 'Test Project',
+            description: 'This is a test project description',
+            url: 'https://github.com/test/project',
+            tags: ['JavaScript', 'Testing']
+        };
+
+        // Test 1: renderProjectCard returns an element
+        try {
+            const card = renderProjectCard(testProject);
+            const isElement = card instanceof HTMLElement;
+            addResult('renderProjectCard returns HTMLElement', isElement, 'Should return an HTMLElement');
+        } catch (error) {
+            addResult('renderProjectCard returns HTMLElement', false, error.message);
+        }
+
+        // Test 2: Card has correct class
+        try {
+            const card = renderProjectCard(testProject);
+            const hasClass = card.classList.contains('project-card');
+            addResult('Card has project-card class', hasClass, 'Should have project-card class');
+        } catch (error) {
+            addResult('Card has project-card class', false, error.message);
+        }
+
+        // Test 3: Card contains project name
+        try {
+            const card = renderProjectCard(testProject);
+            const hasName = card.textContent.includes(testProject.name);
+            addResult('Card contains project name', hasName, 'Should display project name');
+        } catch (error) {
+            addResult('Card contains project name', false, error.message);
+        }
+
+        // Test 4: Card contains project description
+        try {
+            const card = renderProjectCard(testProject);
+            const hasDescription = card.textContent.includes(testProject.description);
+            addResult('Card contains description', hasDescription, 'Should display project description');
+        } catch (error) {
+            addResult('Card contains description', false, error.message);
+        }
+
+        // Test 5: Card contains link with correct URL
+        try {
+            const card = renderProjectCard(testProject);
+            const link = card.querySelector('a');
+            const hasCorrectUrl = link && link.href === testProject.url;
+            addResult('Card has correct URL', hasCorrectUrl, 'Should have link with correct URL');
+        } catch (error) {
+            addResult('Card has correct URL', false, error.message);
+        }
+
+        // Test 6: Link opens in new tab
+        try {
+            const card = renderProjectCard(testProject);
+            const link = card.querySelector('a');
+            const opensInNewTab = link && link.target === '_blank';
+            addResult('Link opens in new tab', opensInNewTab, 'Should have target="_blank"');
+        } catch (error) {
+            addResult('Link opens in new tab', false, error.message);
+        }
+
+        // Test 7: Card has accessibility attributes
+        try {
+            const card = renderProjectCard(testProject);
+            const hasTabindex = card.hasAttribute('tabindex');
+            const hasRole = card.hasAttribute('role');
+            const hasAriaLabel = card.hasAttribute('aria-label');
+            const hasAccessibility = hasTabindex && hasRole && hasAriaLabel;
+            addResult('Card has accessibility attributes', hasAccessibility, 'Should have tabindex, role, and aria-label');
+        } catch (error) {
+            addResult('Card has accessibility attributes', false, error.message);
+        }
+
+        // Test 8: Card renders tags
+        try {
+            const card = renderProjectCard(testProject);
+            const tagsContainer = card.querySelector('.project-card-tags');
+            const hasTags = tagsContainer !== null;
+            addResult('Card renders tags', hasTags, 'Should render tags container');
+        } catch (error) {
+            addResult('Card renders tags', false, error.message);
+        }
+
+        // Test 9: Card appends to grid container
+        try {
+            const container = document.getElementById('project-grid');
+            container.innerHTML = ''; // Clear any existing content
+            const card = renderProjectCard(testProject);
+            container.appendChild(card);
+            const cardInDom = container.querySelector('.project-card') !== null;
+            addResult('Card appends to grid', cardInDom, 'Should append to project grid container');
+        } catch (error) {
+            addResult('Card appends to grid', false, error.message);
+        }
+
+        // Test 10: Multiple cards can be rendered
+        try {
+            const container = document.getElementById('project-grid');
+            container.innerHTML = ''; // Clear
+            const card1 = renderProjectCard(testProject);
+            const card2 = renderProjectCard({ ...testProject, name: 'Second Project' });
+            container.appendChild(card1);
+            container.appendChild(card2);
+            const cardCount = container.querySelectorAll('.project-card').length;
+            addResult('Multiple cards render', cardCount === 2, `Should render 2 cards, found ${cardCount}`);
+        } catch (error) {
+            addResult('Multiple cards render', false, error.message);
+        }
+
+        // Summary
+        setTimeout(() => {
+            const totalTests = results.length;
+            const passedTests = results.filter(r => r.passed).length;
+            const summary = document.createElement('div');
+            summary.className = `test-result ${passedTests === totalTests ? 'pass' : 'fail'}`;
+            summary.innerHTML = `<strong>Summary: ${passedTests}/${totalTests} tests passed</strong>`;
+            document.getElementById('test-results').appendChild(summary);
+        }, 100);
+    </script>
+</body>
+
+</html>

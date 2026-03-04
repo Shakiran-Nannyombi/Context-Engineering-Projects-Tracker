@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling Test - GitHub Pages Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            padding: 2rem;
+        }
+
+        .test-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+        }
+
+        .test-section h2 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .test-results {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f8fafc;
+            border-radius: 0.5rem;
+            font-family: monospace;
+            font-size: 0.875rem;
+        }
+
+        .test-pass {
+            color: #16a34a;
+        }
+
+        .test-fail {
+            color: #dc2626;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Error Handling Test Suite</h1>
+    <p>Testing URL validation and error display functionality</p>
+
+    <div class="test-section">
+        <h2>Test 1: Valid URL Navigation</h2>
+        <div id="test1-container" class="project-grid"></div>
+        <div id="test1-results" class="test-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 2: Invalid URL (malformed)</h2>
+        <div id="test2-container" class="project-grid"></div>
+        <div id="test2-results" class="test-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 3: Invalid URL (non-http protocol)</h2>
+        <div id="test3-container" class="project-grid"></div>
+        <div id="test3-results" class="test-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 4: Console Logging</h2>
+        <div id="test4-results" class="test-results"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Test suite for error handling
+        const testResults = {
+            test1: { passed: false, message: '' },
+            test2: { passed: false, message: '' },
+            test3: { passed: false, message: '' },
+            test4: { passed: false, message: '' }
+        };
+
+        // Capture console.error calls
+        const originalConsoleError = console.error;
+        const consoleErrors = [];
+        console.error = function (...args) {
+            consoleErrors.push(args);
+            originalConsoleError.apply(console, args);
+        };
+
+        // Test 1: Valid URL should not show error
+        function test1() {
+            const project = {
+                name: "Valid Project",
+                description: "This project has a valid URL",
+                url: "https://github.com/test/repo"
+            };
+
+            const card = renderProjectCard(project);
+            document.getElementById('test1-container').appendChild(card);
+
+            // Check if URL is valid
+            const isValid = isValidNavigationURL(project.url);
+
+            if (isValid) {
+                testResults.test1.passed = true;
+                testResults.test1.message = 'Valid URL correctly identified';
+            } else {
+                testResults.test1.message = 'Valid URL incorrectly rejected';
+            }
+
+            displayTestResult('test1');
+        }
+
+        // Test 2: Invalid URL (malformed) should show error
+        function test2() {
+            const project = {
+                name: "Invalid Project",
+                description: "This project has an invalid URL",
+                url: "not-a-valid-url"
+            };
+
+            const card = renderProjectCard(project);
+            document.getElementById('test2-container').appendChild(card);
+
+            // Check if URL is invalid
+            const isValid = isValidNavigationURL(project.url);
+
+            if (!isValid) {
+                testResults.test2.passed = true;
+                testResults.test2.message = 'Invalid URL correctly identified';
+            } else {
+                testResults.test2.message = 'Invalid URL incorrectly accepted';
+            }
+
+            // Simulate click to trigger error display
+            setTimeout(() => {
+                card.click();
+
+                // Check if error indicator is displayed
+                setTimeout(() => {
+                    const hasErrorClass = card.classList.contains('error');
+                    const errorElement = card.querySelector('.project-card-error');
+
+                    if (hasErrorClass && errorElement) {
+                        testResults.test2.message += ' | Error indicator displayed correctly';
+                    } else {
+                        testResults.test2.passed = false;
+                        testResults.test2.message += ' | Error indicator NOT displayed';
+                    }
+                    displayTestResult('test2');
+                }, 100);
+            }, 100);
+        }
+
+        // Test 3: Invalid protocol should show error
+        function test3() {
+            const project = {
+                name: "FTP Project",
+                description: "This project has an FTP URL (invalid protocol)",
+                url: "ftp://example.com/file"
+            };
+
+            const card = renderProjectCard(project);
+            document.getElementById('test3-container').appendChild(card);
+
+            // Check if URL is invalid
+            const isValid = isValidNavigationURL(project.url);
+
+            if (!isValid) {
+                testResults.test3.passed = true;
+                testResults.test3.message = 'Non-HTTP protocol correctly rejected';
+            } else {
+                testResults.test3.message = 'Non-HTTP protocol incorrectly accepted';
+            }
+
+            displayTestResult('test3');
+        }
+
+        // Test 4: Console logging
+        function test4() {
+            // Clear previous errors
+            consoleErrors.length = 0;
+
+            // Trigger an error
+            const invalidUrl = "invalid-url";
+            const testCard = document.createElement('div');
+            safeNavigate(invalidUrl, testCard);
+
+            // Check if error was logged
+            setTimeout(() => {
+                const errorLogged = consoleErrors.some(args =>
+                    args.some(arg =>
+                        typeof arg === 'string' && arg.includes('Navigation error')
+                    )
+                );
+
+                if (errorLogged) {
+                    testResults.test4.passed = true;
+                    testResults.test4.message = 'Navigation errors logged to console';
+                } else {
+                    testResults.test4.message = 'Navigation errors NOT logged to console';
+                }
+
+                displayTestResult('test4');
+            }, 100);
+        }
+
+        // Display test result
+        function displayTestResult(testId) {
+            const result = testResults[testId];
+            const resultElement = document.getElementById(`${testId}-results`);
+            const statusClass = result.passed ? 'test-pass' : 'test-fail';
+            const statusText = result.passed ? '✓ PASS' : '✗ FAIL';
+
+            resultElement.innerHTML = `
+                <span class="${statusClass}">${statusText}</span>: ${result.message}
+            `;
+        }
+
+        // Run all tests
+        setTimeout(() => {
+            test1();
+            test2();
+            test3();
+            test4();
+        }, 500);
+    </script>
+</body>
+
+</html>
