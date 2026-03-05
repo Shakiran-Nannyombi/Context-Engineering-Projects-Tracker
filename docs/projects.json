@@ -40,7 +40,28 @@
                 "primary": "#ff5a5f",
                 "background": "#fff9f9"
             }
+        },
+        {
+            "name": "Component Garden: The Living UI Sanctuary",
+            "description": "A premium, standalone design ecosystem where high-fidelity interface elements are nurtured from pure code into flourishing digital experiences.",
+            "url": "https://github.com/Shakiran-Nannyombi/ComponentGarden",
+            "tags": [
+                "Web",
+                "React",
+                "Next.js",
+                "MUI",
+                "Framer Motion",
+                "Tailwind CSS"
+            ],
+            "status": "Done",
+            "category": "Web/Design",
+            "liveDemo": "https://component-garden.vercel.app/",
+            "image": "./assets/Project_icons/componentgarden.png",
+            "theme": {
+                "primary": "#ab00ff",
+                "background": "#31004a"
+            }
         }
     ],
-    "lastUpdated": "2025-03-05T00:00:00Z"
+    "lastUpdated": "2026-03-05T00:00:00Z"
 }
