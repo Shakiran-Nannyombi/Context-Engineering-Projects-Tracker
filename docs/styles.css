@@ -193,7 +193,6 @@ main::before {
 .project-card:hover {
     transform: translateY(-2px);
     border-color: var(--card-primary);
-    box-shadow: 0 8px 24px var(--card-primary-alpha-20);
 }
 
 .project-card:focus {
