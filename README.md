@@ -22,26 +22,20 @@ This repository is my public **portfolio** + **project management hub** for all 
 
 > **Note:** I'm not a "vibe coder" — that's way too far-fetched 😂. I prefer to call it **context engineering** because let's be real, we're crafting prompts and contexts, not vibes!
 
-## Featured Projects
->
-> (I'll update these as I finish more projects)
+## View My Projects
 
-- **UI Garden: The Sentient Design Arcade** -> A gamified design playground with Gemini AI integration. Built with React, TypeScript, Vite, Framer Motion, and Gemini API. [Live Demo](https://ui-garden-orcin.vercel.app/) | [Repository](https://github.com/Shakiran-Nannyombi/ui-garden)
--
+**[→ Visit the Project Showroom](https://shakiran-nannyombi.github.io/Context-Engineering-Projects-Tracker/)**
 
-## Projects Tracker
+Explore my completed projects in an interactive visual gallery with live demos and source code.
 
-| Project | Category | Status | Repo |
-|--------|----------|--------|------|
-| [UI Garden](https://github.com/Shakiran-Nannyombi/ui-garden) | Web/AI | ✅ Done | [Repo](https://github.com/Shakiran-Nannyombi/ui-garden) |
-| Coming soon | Android | 🧱 Building | (link) |
-| Coming soon | Bitcoin/Research | 💡 Idea | (link) |
+## Master Prompts & Development Board
 
-## Project Roadmap Board
+I manage all project development using GitHub Projects, where each project includes:
+- **Master Prompts**: The core AI prompts that powered the project's development
+- **Development Progress**: Real-time status tracking from idea to deployment
+- **Technical Documentation**: Architecture decisions and implementation notes
 
-  <p align="center">
-    I manage progress using GitHub Projects.</p>
-  <p>👉 <strong>Projects Prompt Libraries:</strong> <a href="https://github.com/users/Shakiran-Nannyombi/projects/4">@Context Engineering Roadmap</a></p>
+**[→ View Master Prompts & Roadmap](https://github.com/users/Shakiran-Nannyombi/projects/4)**
 
 ## Tech Stack
 
