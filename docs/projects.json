@@ -9,7 +9,8 @@
                 "AI",
                 "React",
                 "TypeScript",
-                "Gemini"
+                "Gemini",
+                "Google AI Studio"
             ],
             "status": "Done",
             "category": "Web/AI",
@@ -24,12 +25,13 @@
                 "Web",
                 "AI",
                 "Python",
-                "API"
+                "API",
+                "Kiro"
             ],
             "status": "Building",
             "category": "Web/AI",
-            "liveDemo": "https://recipe-finder-demo.vercel.app/",
-            "image": "./assets/Project_icons/recipe-finder.png"
+            "liveDemo": "https://recipeaiug.vercel.app/",
+            "image": "./assets/Project_icons/RecipeAI.png"
         }
     ],
     "lastUpdated": "2025-03-05T00:00:00Z"
