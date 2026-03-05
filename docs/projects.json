@@ -17,8 +17,8 @@
             "liveDemo": "https://ui-garden-orcin.vercel.app/",
             "image": "./assets/Project_icons/uigarden.png",
             "theme": {
-                "primary": "#9b8df0",
-                "background": "#f8f7fb"
+                "primary": "#00d4ff",
+                "background": "#f0faff"
             }
         },
         {
