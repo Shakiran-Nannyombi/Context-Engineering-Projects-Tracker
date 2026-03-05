@@ -15,7 +15,11 @@
             "status": "Done",
             "category": "Web/AI",
             "liveDemo": "https://ui-garden-orcin.vercel.app/",
-            "image": "./assets/Project_icons/uigarden.png"
+            "image": "./assets/Project_icons/uigarden.png",
+            "theme": {
+                "primary": "#9b8df0",
+                "background": "#f8f7fb"
+            }
         },
         {
             "name": "Recipe Finder",
@@ -31,7 +35,11 @@
             "status": "Building",
             "category": "Web/AI",
             "liveDemo": "https://recipeaiug.vercel.app/",
-            "image": "./assets/Project_icons/RecipeAI.png"
+            "image": "./assets/Project_icons/RecipeAI.png",
+            "theme": {
+                "primary": "#ff5a5f",
+                "background": "#fff9f9"
+            }
         }
     ],
     "lastUpdated": "2025-03-05T00:00:00Z"

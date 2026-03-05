@@ -168,6 +168,16 @@ function renderProjectCard(project) {
     card.setAttribute('role', 'listitem');
     card.setAttribute('aria-label', `Project: ${project.name}`);
 
+    // Apply theme colors if available
+    if (project.theme) {
+        if (project.theme.primary) {
+            card.style.setProperty('--project-primary', project.theme.primary);
+        }
+        if (project.theme.background) {
+            card.style.setProperty('--project-bg', project.theme.background);
+        }
+    }
+
     // Create unique ID for description to use with aria-describedby
     const descriptionId = `project-desc-${project.name.toLowerCase().replace(/\s+/g, '-')}`;
 
