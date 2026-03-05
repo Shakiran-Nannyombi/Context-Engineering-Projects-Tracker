@@ -15,7 +15,22 @@
             "category": "Web/AI",
             "liveDemo": "https://ui-garden-orcin.vercel.app/",
             "image": "./assets/Project_icons/uigarden.png"
+        },
+        {
+            "name": "Recipe Finder",
+            "description": "An intelligent recipe discovery app that helps you find delicious meals based on ingredients you have. Powered by AI for smart recommendations.",
+            "url": "https://github.com/Shakiran-Nannyombi/recipe-finder",
+            "tags": [
+                "Web",
+                "AI",
+                "Python",
+                "API"
+            ],
+            "status": "Building",
+            "category": "Web/AI",
+            "liveDemo": "https://recipe-finder-demo.vercel.app/",
+            "image": "./assets/Project_icons/recipe-finder.png"
         }
     ],
-    "lastUpdated": "2024-12-19T00:00:00Z"
+    "lastUpdated": "2025-03-05T00:00:00Z"
 }
