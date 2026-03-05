@@ -14,7 +14,7 @@
             "status": "Done",
             "category": "Web/AI",
             "liveDemo": "https://ui-garden-orcin.vercel.app/",
-            "image": "../assets/Project_icons/uigarden.png"
+            "image": "./assets/Project_icons/uigarden.png"
         }
     ],
     "lastUpdated": "2024-12-19T00:00:00Z"

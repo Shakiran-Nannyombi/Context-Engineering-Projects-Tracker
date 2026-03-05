@@ -32,10 +32,8 @@ Explore my completed projects in an interactive visual gallery with live demos a
 
 I manage all project development using GitHub Projects, where each project includes:
 - **Master Prompts**: The core AI prompts that powered the project's development
-- **Development Progress**: Real-time status tracking from idea to deployment
-- **Technical Documentation**: Architecture decisions and implementation notes
 
-**[→ View Master Prompts & Roadmap](https://github.com/users/Shakiran-Nannyombi/projects/4)**
+**[→ View Master Prompts](https://github.com/users/Shakiran-Nannyombi/projects/4)**
 
 ## Tech Stack
 
