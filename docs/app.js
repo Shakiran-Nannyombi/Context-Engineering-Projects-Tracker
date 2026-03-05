@@ -211,7 +211,7 @@ function renderProjectCard(project) {
     if (project.liveDemo) {
         const liveDemoLink = document.createElement('a');
         liveDemoLink.href = project.liveDemo;
-        liveDemoLink.textContent = '🚀 Live Demo';
+        liveDemoLink.innerHTML = '<i data-lucide="external-link" class="w-4 h-4"></i> Live Demo';
         liveDemoLink.className = 'project-link-demo';
         liveDemoLink.setAttribute('target', '_blank');
         liveDemoLink.setAttribute('rel', 'noopener noreferrer');
@@ -229,7 +229,7 @@ function renderProjectCard(project) {
     // Create repository link
     const repoLink = document.createElement('a');
     repoLink.href = project.url;
-    repoLink.textContent = '📦 Repository';
+    repoLink.innerHTML = '<i data-lucide="github" class="w-4 h-4"></i> Repository';
     repoLink.className = 'project-link-repo';
     repoLink.setAttribute('target', '_blank');
     repoLink.setAttribute('rel', 'noopener noreferrer');
@@ -316,6 +316,11 @@ async function initShowroom() {
         // Render projects
         if (data.projects && data.projects.length > 0) {
             renderAllProjects(data.projects);
+
+            // Initialize Lucide icons
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
         } else {
             displayErrorMessage('No projects available to display.');
         }
