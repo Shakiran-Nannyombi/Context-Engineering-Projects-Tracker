@@ -61,7 +61,27 @@
                 "primary": "#ab00ff",
                 "background": "#31004a"
             }
+        },
+        {
+            "name": "Text2Reel: AI Cinematic Storyboarder",
+            "description": "A high-fidelity platform designed for the intelligent generation of cinematic video scenes from natural language prompts. Enables creators to transform concepts into frame-perfect storyboards.",
+            "url": "https://github.com/Shakiran-Nannyombi/Text2Reel",
+            "tags": [
+                "Web",
+                "AI",
+                "Next.js",
+                "Remotion",
+                "Groq"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://text2reel.vercel.app/",
+            "image": "./assets/Project_icons/Text2reel.png",
+            "theme": {
+                "primary": "#9B5DE5",
+                "background": "#f8f5ff"
+            }
         }
     ],
-    "lastUpdated": "2026-03-05T00:00:00Z"
+    "lastUpdated": "2026-03-10T12:00:00Z"
 }
