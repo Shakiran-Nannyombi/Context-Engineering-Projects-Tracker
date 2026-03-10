@@ -316,10 +316,44 @@ function renderAllProjects(projects) {
 }
 
 /**
+ * Initializes the theme based on local storage or system preference
+ */
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.body.classList.add('dark-theme');
+    } else {
+        document.body.classList.remove('dark-theme');
+    }
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', toggleTheme);
+    }
+}
+
+/**
+ * Toggles the current theme and saves preference
+ */
+function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+
+    const isDark = document.body.classList.contains('dark-theme');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+    // The CSS handles showing/hiding the sun/moon icons based on the body class
+}
+
+/**
  * Initializes the showroom application
  */
 async function initShowroom() {
     try {
+        // Initialize theme
+        initTheme();
+
         // Load project data
         const data = await loadProjects();
 

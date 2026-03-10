@@ -21,21 +21,24 @@
     --color-text-main: #332f4a;
     --color-text-muted: #746d92;
     --color-text-dim: #a6a0bd;
+}
 
-    /* Typography */
-    --font-display: 'Space Grotesk', sans-serif;
-    --font-sans: 'Inter', sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
+body.dark-theme {
+    /* Backgrounds - Soft Seamless (Dark) */
+    --color-bg-dark: #0f0518;
+    --color-bg-panel: #160724;
+    --color-bg-black-alpha: rgba(255, 255, 255, 0.03);
 
-    /* Effects - Clean, No Neon */
-    --shadow-neon: none;
-    --shadow-glass: 0 4px 12px rgba(155, 141, 240, 0.08);
-    --border-glass: 1px solid rgba(155, 141, 240, 0.15);
+    /* Text (Dark) */
+    --color-text-main: #f0f0f5;
+    --color-text-muted: #a0a0b0;
+    --color-text-dim: #707080;
 
-    /* Transitions */
-    --transition-fast: 150ms ease-out;
-    --transition-base: 250ms ease-out;
-    --transition-slow: 500ms ease;
+    /* Effects override */
+    --border-glass: 1px solid rgba(247, 154, 122, 0.15);
+    --color-primary: #f79878;
+    --color-primary-alpha-20: rgba(247, 154, 122, 0.2);
+    --shadow-glass: 0 4px 12px rgba(247, 154, 122, 0.08);
 }
 
 /* ============================================
@@ -99,6 +102,48 @@ header h1 {
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    color: var(--color-primary);
+    background: var(--color-primary-alpha-10);
+}
+
+/* Hide sun by default (light mode) */
+.icon-sun {
+    display: none;
+}
+
+.icon-moon {
+    display: block;
+}
+
+/* Show sun in dark mode, hide moon */
+body.dark-theme .icon-sun {
+    display: block;
+}
+
+body.dark-theme .icon-moon {
+    display: none;
 }
 
 .header-profile {
