@@ -22,26 +22,6 @@
             }
         },
         {
-            "name": "Recipe Finder",
-            "description": "An intelligent recipe discovery app that helps you find delicious meals based on ingredients you have. Powered by AI for smart recommendations.",
-            "url": "https://github.com/Shakiran-Nannyombi/recipe-finder",
-            "tags": [
-                "Web",
-                "AI",
-                "Python",
-                "API",
-                "Kiro"
-            ],
-            "status": "Building",
-            "category": "Web/AI",
-            "liveDemo": "https://recipeaiug.vercel.app/",
-            "image": "./assets/Project_icons/RecipeAI.png",
-            "theme": {
-                "primary": "#FFD059",
-                "background": "#014A00"
-            }
-        },
-        {
             "name": "Component Garden: The Living UI Sanctuary",
             "description": "A premium, standalone design ecosystem where high-fidelity interface elements are nurtured from pure code into flourishing digital experiences.",
             "url": "https://github.com/Shakiran-Nannyombi/ComponentGarden",
@@ -80,6 +60,26 @@
             "theme": {
                 "primary": "#f79878",
                 "background": "#4A281C"
+            }
+        },
+        {
+            "name": "Recipe Finder",
+            "description": "An intelligent recipe discovery app that helps you find delicious meals based on ingredients you have. Powered by AI for smart recommendations.",
+            "url": "https://github.com/Shakiran-Nannyombi/recipe-finder",
+            "tags": [
+                "Web",
+                "AI",
+                "Python",
+                "API",
+                "Kiro"
+            ],
+            "status": "Building",
+            "category": "Web/AI",
+            "liveDemo": "https://recipeaiug.vercel.app/",
+            "image": "./assets/Project_icons/RecipeAI.png",
+            "theme": {
+                "primary": "#FFD059",
+                "background": "#B13D03"
             }
         }
     ],
