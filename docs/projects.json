@@ -18,7 +18,7 @@
             "image": "./assets/Project_icons/uigarden.png",
             "theme": {
                 "primary": "#7ED6D7",
-                "background": "#39BFB6"
+                "background": "#025E5C"
             }
         },
         {
@@ -38,7 +38,7 @@
             "image": "./assets/Project_icons/RecipeAI.png",
             "theme": {
                 "primary": "#FFD059",
-                "background": "#ED450D"
+                "background": "#014A00"
             }
         },
         {
