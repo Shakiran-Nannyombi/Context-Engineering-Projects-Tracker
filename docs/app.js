@@ -344,6 +344,10 @@ function toggleTheme() {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 
     // The CSS handles showing/hiding the sun/moon icons based on the body class
+    // Re-initialize icons in case they need to be re-rendered
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
 }
 
 /**
