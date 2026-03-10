@@ -5,40 +5,49 @@
    CSS Custom Properties - Context_Eng Theme
    ============================================ */
 :root {
-    /* Theme Colors - Lavender Palette */
-    --color-primary: #9b8df0;
-    --color-primary-light: rgba(155, 141, 240, 0.3);
-    --color-primary-alpha-10: rgba(155, 141, 240, 0.1);
-    --color-primary-alpha-20: rgba(155, 141, 240, 0.2);
-    --color-accent-blue: #b3a6f7;
+    /* Theme Colors - Monochromatic GitHub-like */
+    --color-primary: #1f2328;
+    --color-primary-light: rgba(31, 35, 40, 0.1);
+    --color-primary-alpha-10: rgba(31, 35, 40, 0.1);
+    --color-primary-alpha-20: rgba(31, 35, 40, 0.2);
+    --color-accent-blue: #0969da;
 
-    /* Backgrounds - Soft Seamless */
-    --color-bg-dark: #f8f7fb;
+    /* Backgrounds - Clean Neutral */
+    --color-bg-dark: #ffffff;
     --color-bg-panel: #ffffff;
-    --color-bg-black-alpha: rgba(0, 0, 0, 0.03);
+    --color-bg-black-alpha: rgba(0, 0, 0, 0.04);
 
     /* Text */
-    --color-text-main: #332f4a;
-    --color-text-muted: #746d92;
-    --color-text-dim: #a6a0bd;
+    --color-text-main: #1f2328;
+    --color-text-muted: #656d76;
+    --color-text-dim: #8c959f;
+
+    /* Borders & Shadows */
+    --border-glass: 1px solid #d0d7de;
+    --shadow-glass: 0 1px 0 rgba(31, 35, 40, 0.04);
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
 }
 
 body.dark-theme {
-    /* Backgrounds - Soft Seamless (Dark) */
-    --color-bg-dark: #0f0518;
-    --color-bg-panel: #160724;
-    --color-bg-black-alpha: rgba(255, 255, 255, 0.03);
+    /* Backgrounds - Dark GitHub Style */
+    --color-bg-dark: #010409;
+    --color-bg-panel: #0d1117;
+    --color-bg-black-alpha: rgba(255, 255, 255, 0.05);
 
     /* Text (Dark) */
-    --color-text-main: #f0f0f5;
-    --color-text-muted: #a0a0b0;
-    --color-text-dim: #707080;
+    --color-text-main: #e6edf3;
+    --color-text-muted: #848d97;
+    --color-text-dim: #7d8590;
 
     /* Effects override */
-    --border-glass: 1px solid rgba(247, 154, 122, 0.15);
-    --color-primary: #f79878;
-    --color-primary-alpha-20: rgba(247, 154, 122, 0.2);
-    --shadow-glass: 0 4px 12px rgba(247, 154, 122, 0.08);
+    --border-glass: 1px solid #30363d;
+    --color-primary: #ffffff;
+    --color-primary-alpha-20: rgba(255, 255, 255, 0.2);
+    --shadow-glass: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* ============================================
@@ -235,7 +244,7 @@ main::before {
     transition: all var(--transition-base);
     animation: fadeInUp 0.6s ease-out forwards;
     opacity: 0;
-    box-shadow: 0 2px 8px rgba(155, 141, 240, 0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
@@ -378,12 +387,16 @@ main::before {
 }
 
 .project-link-demo {
-    color: #0f0518;
-    /* Dark color for all modes */
-    background: var(--card-primary);
-    border: 1px solid var(--card-primary);
+    color: #ffffff;
+    background: #1f2328;
+    border: 1px solid #1f2328;
     font-weight: 600;
-    /* Made slightly bolder for better readability */
+}
+
+body.dark-theme .project-link-demo {
+    color: #0d1117;
+    background: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .project-link-demo:hover {
@@ -452,12 +465,18 @@ footer p {
 }
 
 footer a {
-    color: var(--color-primary);
-    font-weight: 500;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color var(--transition-fast);
+}
+
+body.dark-theme footer a {
+    color: #ffffff;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    opacity: 0.8;
 }
 
 /* ============================================
