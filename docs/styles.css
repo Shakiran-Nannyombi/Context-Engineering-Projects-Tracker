@@ -378,9 +378,12 @@ main::before {
 }
 
 .project-link-demo {
-    color: #ffffff;
+    color: #0f0518;
+    /* Dark color for all modes */
     background: var(--card-primary);
     border: 1px solid var(--card-primary);
+    font-weight: 600;
+    /* Made slightly bolder for better readability */
 }
 
 .project-link-demo:hover {
@@ -394,9 +397,20 @@ main::before {
     border: 1px solid var(--border-glass);
 }
 
+body.dark-theme .project-link-repo {
+    color: #ffffff;
+    /* Explicitly ensure it is white/light in dark mode */
+    background: rgba(255, 255, 255, 0.05);
+    /* Slight contrast against the card background */
+}
+
 .project-link-repo:hover {
     background: var(--color-primary-alpha-10);
     transform: translateY(-1px);
+}
+
+body.dark-theme .project-link-repo:hover {
+    background: var(--color-primary-alpha-20);
 }
 
 /* ============================================

@@ -37,8 +37,8 @@
             "liveDemo": "https://recipeaiug.vercel.app/",
             "image": "./assets/Project_icons/RecipeAI.png",
             "theme": {
-                "primary": "#ff5a5f",
-                "background": "#fff9f9"
+                "primary": "#FFD059",
+                "background": "#ED450D"
             }
         },
         {
