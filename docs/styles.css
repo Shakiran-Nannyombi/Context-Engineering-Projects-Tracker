@@ -387,16 +387,10 @@ main::before {
 }
 
 .project-link-demo {
-    color: #ffffff;
-    background: #1f2328;
-    border: 1px solid #1f2328;
+    color: var(--card-primary);
+    background: var(--card-bg);
+    border: 1px solid var(--card-primary);
     font-weight: 600;
-}
-
-body.dark-theme .project-link-demo {
-    color: #0d1117;
-    background: #ffffff;
-    border: 1px solid #ffffff;
 }
 
 .project-link-demo:hover {
