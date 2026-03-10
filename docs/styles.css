@@ -133,20 +133,20 @@ header h1 {
 
 /* Hide sun by default (light mode) */
 .icon-sun {
-    display: none;
+    display: none !important;
 }
 
 .icon-moon {
-    display: block;
+    display: flex !important;
 }
 
 /* Show sun in dark mode, hide moon */
 body.dark-theme .icon-sun {
-    display: block;
+    display: flex !important;
 }
 
 body.dark-theme .icon-moon {
-    display: none;
+    display: none !important;
 }
 
 .header-profile {
@@ -390,12 +390,12 @@ main::before {
 
 .project-link-repo {
     color: var(--color-text-main);
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: var(--color-bg-panel);
+    border: 1px solid var(--border-glass);
 }
 
 .project-link-repo:hover {
-    background: #f1f0f5;
+    background: var(--color-primary-alpha-10);
     transform: translateY(-1px);
 }
 

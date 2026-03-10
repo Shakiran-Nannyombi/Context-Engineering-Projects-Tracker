@@ -319,32 +319,55 @@ function renderAllProjects(projects) {
  * Initializes the theme based on local storage or system preference
  */
 function initTheme() {
+    console.log('Initializing theme...');
+
+    // Check local storage or system preference
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+    // Apply initial theme
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        console.log('Setting initial theme to dark');
         document.body.classList.add('dark-theme');
     } else {
+        console.log('Setting initial theme to light');
         document.body.classList.remove('dark-theme');
     }
 
+    // Attach event listener
     const themeToggleBtn = document.getElementById('theme-toggle');
     if (themeToggleBtn) {
+        console.log('Found theme toggle button, attaching listener');
+
+        // Remove old listener if any
+        themeToggleBtn.removeEventListener('click', toggleTheme);
         themeToggleBtn.addEventListener('click', toggleTheme);
+    } else {
+        console.warn('Theme toggle button not found in DOM');
     }
 }
 
 /**
  * Toggles the current theme and saves preference
  */
-function toggleTheme() {
+function toggleTheme(event) {
+    console.log('Theme toggle clicked');
+
+    // Prevent event from bubbling if it came from child Elements like SVG
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+
+    // Toggle the class on the body
     document.body.classList.toggle('dark-theme');
 
+    // Save to local storage
     const isDark = document.body.classList.contains('dark-theme');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    console.log(`Theme toggled to: ${isDark ? 'dark' : 'light'}`);
 
-    // The CSS handles showing/hiding the sun/moon icons based on the body class
-    // Re-initialize icons in case they need to be re-rendered
+    // Re-initialize icons if necessary
     if (window.lucide) {
         window.lucide.createIcons();
     }
