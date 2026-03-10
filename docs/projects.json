@@ -78,8 +78,8 @@
             "liveDemo": "https://text2reel.vercel.app/",
             "image": "./assets/Project_icons/Text2reel.png",
             "theme": {
-                "primary": "#9B5DE5",
-                "background": "#f8f5ff"
+                "primary": "#f79878",
+                "background": "#0f0518"
             }
         }
     ],
