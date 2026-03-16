@@ -100,10 +100,10 @@
             "liveDemo": "https://www.cortexug.duckdns.org/",
             "image": "./assets/Project_icons/cortex.svg",
             "theme": {
-                "primary": "#00bcd4",
-                "background": "#002d33"
+                "primary": "#0074D4",
+                "background": "#001E33"
             }
         }
     ],
-    "lastUpdated": "2026-03-16T07:22:00Z"
+    "lastUpdated": "2026-03-17T02:50:00Z"
 }
