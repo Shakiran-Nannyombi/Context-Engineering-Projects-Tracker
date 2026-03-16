@@ -81,7 +81,29 @@
                 "primary": "#FFD059",
                 "background": "#B13D03"
             }
+        },
+        {
+            "name": "Cortex",
+            "description": "A cloud-agnostic document processing platform (upload → OCR → search → organize). Built with React, Flask, PostgreSQL, and Docker.",
+            "url": "https://github.com/Shakiran-Nannyombi/Cortex",
+            "tags": [
+                "Web",
+                "AI",
+                "Flask",
+                "React",
+                "PostgreSQL",
+                "Docker",
+                "OCR"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://www.cortexug.duckdns.org/",
+            "image": "./assets/Project_icons/cortex.svg",
+            "theme": {
+                "primary": "#00bcd4",
+                "background": "#002d33"
+            }
         }
     ],
-    "lastUpdated": "2026-03-10T12:00:00Z"
+    "lastUpdated": "2026-03-16T07:22:00Z"
 }
