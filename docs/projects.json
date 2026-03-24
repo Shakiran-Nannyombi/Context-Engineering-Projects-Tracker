@@ -149,7 +149,28 @@
                 "primary": "#4fd1c5",
                 "background": "#0f1419"
             }
+        },
+        {
+            "name": "SonoQuip",
+            "description": "An interactive PWA for sonography learning and verification. Features curated quizzes, role-based dashboards, and QR-based credential verification.",
+            "url": "https://github.com/Shakiran-Nannyombi/SonoQuip",
+            "tags": [
+                "Web",
+                "PWA",
+                "Vue 3",
+                "Vite",
+                "TypeScript",
+                "Tailwind CSS"
+            ],
+            "status": "Done",
+            "category": "Web/PWA",
+            "liveDemo": "https://sono-quip.vercel.app/",
+            "image": "./assets/Project_icons/sonoquip.svg",
+            "theme": {
+                "primary": "#47c9db",
+                "background": "#083839"
+            }
         }
     ],
-    "lastUpdated": "2026-03-24T11:40:00Z"
+    "lastUpdated": "2026-03-24T13:08:00Z"
 }
