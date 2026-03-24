@@ -126,7 +126,30 @@
                 "primary": "#42ae44",
                 "background": "#040604"
             }
+        },
+        {
+            "name": "Londoolink AI",
+            "description": "Your Intelligent Digital Twin. A comprehensive AI-powered personal assistant that manages emails, calendars, and communications with a LangGraph multi-agent architecture.",
+            "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
+            "tags": [
+                "Web",
+                "AI",
+                "FastAPI",
+                "Next.js",
+                "LangGraph",
+                "OpenAI",
+                "PostgreSQL",
+                "Tailwind CSS"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://londoolink-ai.vercel.app/",
+            "image": "./assets/Project_icons/loondolinkAI.png",
+            "theme": {
+                "primary": "#4fd1c5",
+                "background": "#0f1419"
+            }
         }
     ],
-    "lastUpdated": "2026-03-24T10:31:00Z"
+    "lastUpdated": "2026-03-24T11:10:30Z"
 }
