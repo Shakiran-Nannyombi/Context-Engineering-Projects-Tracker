@@ -103,7 +103,30 @@
                 "primary": "#001033",
                 "background": "#0154C8"
             }
+        },
+        {
+            "name": "CommunitAI",
+            "description": "An AI-powered Chief of Staff for community leaders. Automatically transcribes meetings, extracts action items, analyzes sentiment, and generates follow-up drafts.",
+            "url": "https://github.com/Shakiran-Nannyombi/CommunitAI",
+            "tags": [
+                "Web",
+                "AI",
+                "Next.js",
+                "FastAPI",
+                "DigitalOcean",
+                "Gradient AI",
+                "Groq",
+                "PostgreSQL"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://communit-ai.vercel.app",
+            "image": "./assets/Project_icons/communitAI.svg",
+            "theme": {
+                "primary": "#42ae44",
+                "background": "#040604"
+            }
         }
     ],
-    "lastUpdated": "2026-03-17T02:50:00Z"
+    "lastUpdated": "2026-03-24T10:31:00Z"
 }
