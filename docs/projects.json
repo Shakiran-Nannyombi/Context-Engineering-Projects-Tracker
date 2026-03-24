@@ -170,7 +170,28 @@
                 "primary": "#47c9db",
                 "background": "#083839"
             }
+        },
+        {
+            "name": "Kylax Bank",
+            "description": "A next-generation AI-native banking platform featuring animated glassmorphism UI, real-time application tracking, and AI-driven credit assessment visualizations.",
+            "url": "https://github.com/Shakiran-Nannyombi/kylaxBank",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "Tailwind CSS",
+                "Express.js",
+                "WebSocket"
+            ],
+            "status": "Done",
+            "category": "Web/FinTech",
+            "liveDemo": "https://kylax-bank.vercel.app/",
+            "image": "./assets/Project_icons/kylaxbank.png",
+            "theme": {
+                "primary": "#667eea",
+                "background": "#1a202c"
+            }
         }
     ],
-    "lastUpdated": "2026-03-24T13:08:00Z"
+    "lastUpdated": "2026-03-24T13:23:00Z"
 }
