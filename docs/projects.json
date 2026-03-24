@@ -55,7 +55,7 @@
             ],
             "status": "Done",
             "category": "Web/AI",
-            "liveDemo": "https://text2reel.vercel.app/",
+            "liveDemo": "https://text2-reel.vercel.app/",
             "image": "./assets/Project_icons/Text2reel.png",
             "theme": {
                 "primary": "#f79878",
