@@ -128,6 +128,27 @@
             }
         },
         {
+            "name": "Kylax Bank",
+            "description": "A next-generation AI-native banking platform featuring animated glassmorphism UI, real-time application tracking, and AI-driven credit assessment visualizations.",
+            "url": "https://github.com/Shakiran-Nannyombi/kylaxBank",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "Tailwind CSS",
+                "Express.js",
+                "WebSocket"
+            ],
+            "status": "Done",
+            "category": "Web/FinTech",
+            "liveDemo": "https://kylax-bank.vercel.app/",
+            "image": "./assets/Project_icons/kylaxbank.png",
+            "theme": {
+                "primary": "#667eea",
+                "background": "#1a202c"
+            }
+        },
+        {
             "name": "Artisan Pizza AI",
             "description": "A premium, AI-driven platform that combines traditional wood-fired pizza excellence with an intelligent AI Taste Assistant. Features a high-performance frontend and a specialized Streamlit AI Dashboard (https://pizza-customerservice-agent.streamlit.app/).",
             "url": "https://github.com/Shakiran-Nannyombi/Pizza-CustomerService-Agent",
@@ -170,27 +191,6 @@
             "theme": {
                 "primary": "#4fd1c5",
                 "background": "#0f1419"
-            }
-        },
-        {
-            "name": "Kylax Bank",
-            "description": "A next-generation AI-native banking platform featuring animated glassmorphism UI, real-time application tracking, and AI-driven credit assessment visualizations.",
-            "url": "https://github.com/Shakiran-Nannyombi/kylaxBank",
-            "tags": [
-                "Web",
-                "AI",
-                "React",
-                "Tailwind CSS",
-                "Express.js",
-                "WebSocket"
-            ],
-            "status": "Done",
-            "category": "Web/FinTech",
-            "liveDemo": "https://kylax-bank.vercel.app/",
-            "image": "./assets/Project_icons/kylaxbank.png",
-            "theme": {
-                "primary": "#667eea",
-                "background": "#1a202c"
             }
         },
         {
