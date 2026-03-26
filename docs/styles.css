@@ -506,9 +506,8 @@ main::before {
 
 body.dark-theme .project-link-repo {
     color: #ffffff;
-    /* Explicitly ensure it is white/light in dark mode */
-    background: rgba(255, 255, 255, 0.05);
-    /* Slight contrast against the card background */
+    background: var(--color-bg-panel);
+    border-color: var(--border-glass);
 }
 
 .project-link-repo:hover {

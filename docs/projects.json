@@ -167,7 +167,7 @@
             "image": "./assets/Project_icons/pizzaagent.svg",
             "theme": {
                 "primary": "#FF6B35",
-                "background": "#FFF8E7"
+                "background": "#2D1B14"
             }
         },
         {
@@ -209,7 +209,7 @@
             "status": "Done",
             "category": "Web/FinTech",
             "liveDemo": "https://finui.vercel.app/",
-            "image": "./assets/Project_icons/finui.png",
+            "image": "./assets/Project_icons/finui.svg",
             "theme": {
                 "primary": "#10B981",
                 "background": "#0f172a"
