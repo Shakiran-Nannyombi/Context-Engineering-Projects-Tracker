@@ -194,6 +194,52 @@
             }
         },
         {
+            "name": "Finui",
+            "description": "A financial inclusion app for informal workers — market vendors, boda boda riders, and tailors. Uses alternative data to build a verifiable Trust Score, unlocking micro-savings and credit tiers without formal pay slips.",
+            "url": "https://github.com/Shakiran-Nannyombi/finui",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "Tailwind CSS",
+                "Node.js",
+                "Express",
+                "FinTech"
+            ],
+            "status": "Done",
+            "category": "Web/FinTech",
+            "liveDemo": "https://finui.vercel.app/",
+            "image": "./assets/Project_icons/finui.png",
+            "theme": {
+                "primary": "#10B981",
+                "background": "#0f172a"
+            }
+        },
+        {
+            "name": "Komorembi",
+            "description": "A full-stack AI chat agent with RAG capabilities, LINE messaging integration, and an admin dashboard. Features bilingual support (English & Japanese), live stats, chat logs, and a knowledge base manager.",
+            "url": "https://github.com/Shakiran-Nannyombi/Chat-rag-Agent-MVP",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "FastAPI",
+                "LangChain",
+                "Pinecone",
+                "Groq",
+                "MongoDB",
+                "LINE"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://komorebi-sigma.vercel.app/",
+            "image": "./assets/Project_icons/komorembi.png",
+            "theme": {
+                "primary": "#a78bfa",
+                "background": "#1e1b4b"
+            }
+        },
+        {
             "name": "SonoQuip",
             "description": "An interactive PWA for sonography learning and verification. Features curated quizzes, role-based dashboards, and QR-based credential verification.",
             "url": "https://github.com/Shakiran-Nannyombi/SonoQuip",
@@ -215,5 +261,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-03-24T17:23:00Z"
+    "lastUpdated": "2026-03-26T00:00:00Z"
 }
