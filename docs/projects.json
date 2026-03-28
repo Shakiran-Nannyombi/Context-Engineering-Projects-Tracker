@@ -1,6 +1,28 @@
 {
     "projects": [
         {
+            "name": "Mzee Chakula",
+            "description": "An intelligent nutrition recommendation and meal-planning assistant. Features a voice-enabled chat interface, personalized caloric needs estimation, and AI-driven local food recommendations based on nutritional similarity.",
+            "url": "https://github.com/MzeeChakula/Model-Testing",
+            "tags": [
+                "Web",
+                "AI",
+                "Vue 3",
+                "FastAPI",
+                "Python",
+                "Nutrition",
+                "Voice AI"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://mzeechakula.vercel.app/",
+            "image": "./assets/Project_icons/MzeeChakula.svg",
+            "theme": {
+                "primary": "#d90000",
+                "background": "#1a1a1a"
+            }
+        },
+        {
             "name": "UI Garden: The Sentient Design Arcade",
             "description": "A gamified design playground with Gemini AI integration. Built with React, TypeScript, Vite, Framer Motion, and Gemini API.",
             "url": "https://github.com/Shakiran-Nannyombi/ui-garden",
@@ -261,5 +283,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-03-26T00:00:00Z"
+    "lastUpdated": "2026-03-28T00:00:00Z"
 }
