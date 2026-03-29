@@ -672,8 +672,8 @@ footer a:hover {
 }
 
 body.dark-theme .project-mcp-details {
-    background: rgba(255, 255, 255, 0.03);
-    border-left-color: #3b82f6;
+    background: rgba(255, 255, 255, 0.06);
+    border-left-color: #60a5fa;
 }
 
 .mcp-meta-item {
@@ -730,12 +730,18 @@ body.dark-theme .mcp-meta-value {
     overflow: hidden;
     text-overflow: ellipsis;
     color: var(--color-text-muted);
+    transition: all var(--transition-fast);
 }
 
 body.dark-theme .mcp-tool-badge {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
     color: var(--color-text-main);
+}
+
+body.dark-theme .mcp-tool-badge:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.35);
 }
 
 @keyframes fadeInUp {
