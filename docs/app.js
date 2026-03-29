@@ -3,6 +3,9 @@
  * Loads and displays Context Engineering projects
  */
 
+let currentProjects = [];
+let activeTab = 'tab-projects';
+
 /**
  * Validates a project object has all required fields
  * @param {Object} project - Project object to validate
@@ -381,24 +384,102 @@ async function initShowroom() {
         // Initialize theme
         initTheme();
 
+        // Initialize Tabs
+        initTabs();
+
         // Load project data
         const data = await loadProjects();
+        currentProjects = data.projects || [];
 
-        // Render projects
-        if (data.projects && data.projects.length > 0) {
-            renderAllProjects(data.projects);
-
-            // Initialize Lucide icons
-            if (window.lucide) {
-                window.lucide.createIcons();
+        // Initial Render
+        if (activeTab === 'tab-projects') {
+            if (currentProjects.length > 0) {
+                renderAllProjects(currentProjects);
+            } else {
+                displayErrorMessage('No projects available to display.');
             }
         } else {
-            displayErrorMessage('No projects available to display.');
+            renderMCPShowcase();
+        }
+
+        // Initialize Lucide icons
+        if (window.lucide) {
+            window.lucide.createIcons();
         }
     } catch (error) {
         console.error('Failed to initialize showroom:', error);
         displayErrorMessage('Failed to initialize the showroom. Please refresh the page.');
     }
+}
+
+/**
+ * Initializes tab event listeners
+ */
+function initTabs() {
+    const tabs = document.querySelectorAll('.tab-btn');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const tabId = tab.id;
+            if (tabId === activeTab) return;
+
+            // Update active state in UI
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+
+            activeTab = tabId;
+            handleTabSwitch(tabId);
+        });
+    });
+}
+
+/**
+ * Handles tab switching logic
+ * @param {string} tabId - The ID of the clicked tab
+ */
+function handleTabSwitch(tabId) {
+    const container = document.getElementById('project-grid');
+    if (!container) return;
+
+    // Clear container
+    container.innerHTML = '';
+
+    if (tabId === 'tab-projects') {
+        if (currentProjects.length > 0) {
+            renderAllProjects(currentProjects);
+        } else {
+            displayErrorMessage('No projects available to display.');
+        }
+    } else if (tabId === 'tab-mcp') {
+        renderMCPShowcase();
+    }
+
+    // Refresh icons for new content
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
+}
+
+/**
+ * Renders the MCP Showcase placeholder
+ */
+function renderMCPShowcase() {
+    const container = document.getElementById('project-grid');
+    if (!container) return;
+
+    const placeholder = document.createElement('div');
+    placeholder.className = 'mcp-placeholder';
+    placeholder.innerHTML = `
+        <i data-lucide="blocks"></i>
+        <h2>Model Context Protocol Hub</h2>
+        <p>A specialized ecosystem for connecting LLMs to local tools, databases, and APIs. This space will showcase custom MCP servers, prompts, and context engineering tools.</p>
+        <p style="margin-top: 1rem; font-weight: 600; color: var(--color-accent-blue);">Coming Soon: Integrated Tools Registry</p>
+    `;
+
+    container.appendChild(placeholder);
 }
 
 // Initialize the showroom when DOM is ready
