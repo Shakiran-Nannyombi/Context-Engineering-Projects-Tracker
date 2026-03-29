@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "name": "Notion Spec-to-Ship Pipeline",
+            "description": "An AI-powered automation that transforms rough Notion ideas into production-ready specs and implementation tasks. Automatically detects [SHIP] pages, analyzes requirements with Groq AI, and generates structured spec databases and organized development plans.",
+            "url": "https://github.com/Shakiran-Nannyombi/NotionMCP-Challenge",
+            "tags": [
+                "Python",
+                "AI",
+                "Notion API",
+                "Groq",
+                "Automation",
+                "LLM",
+                "MCP"
+            ],
+            "status": "Done",
+            "category": "AI/Automation",
+            "liveDemo": "https://geode-weight-b22.notion.site/MCP-Challenge-332dd76a630a8062bdb3e1684e24e9ef?source=copy_link",
+            "image": "./assets/Project_icons/notion.png",
+            "mcpDetails": {
+                "type": "Server",
+                "runtime": "Python 3.11",
+                "tools": ["Page Poller", "Groq Extractor", "Spec Generator", "Notion Writer"]
+            },
+            "theme": {
+                "primary": "#000000",
+                "background": "#ffffff"
+            }
+        }
+    ],
+    "lastUpdated": "2026-03-29T18:30:00Z"
+}

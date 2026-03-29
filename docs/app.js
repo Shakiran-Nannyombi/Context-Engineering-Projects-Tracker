@@ -4,6 +4,7 @@
  */
 
 let currentProjects = [];
+let currentMCPs = [];
 let activeTab = 'tab-projects';
 
 /**
@@ -72,6 +73,44 @@ async function loadProjects() {
         return { projects: [] };
     }
 }
+
+/**
+ * Loads project data from mcps.json
+ * @returns {Promise<Object>} - Project data object with projects array
+ */
+async function loadMCPs() {
+    try {
+        const response = await fetch('mcps.json');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // Validate data structure
+        if (!data || typeof data !== 'object') {
+            throw new Error('Invalid data format: expected object');
+        }
+
+        if (!Array.isArray(data.projects)) {
+            throw new Error('Invalid data format: projects must be an array');
+        }
+
+        // Filter out invalid projects
+        const validProjects = data.projects.filter(validateProject);
+
+        return {
+            projects: validProjects,
+            lastUpdated: data.lastUpdated
+        };
+
+    } catch (error) {
+        console.error('Failed to load MCPs:', error);
+        return { projects: [] };
+    }
+}
+
 
 /**
  * Displays an error message to the user
@@ -257,6 +296,58 @@ function renderProjectCard(project) {
 
     linksContainer.appendChild(repoLink);
     card.appendChild(linksContainer);
+    
+    // Add MCP details if present
+    if (project.mcpDetails) {
+        const mcpContainer = document.createElement('div');
+        mcpContainer.className = 'project-mcp-details';
+        
+        // Render key-value pairs (meta items)
+        Object.entries(project.mcpDetails).forEach(([key, value]) => {
+            if (key === 'tools' && Array.isArray(value)) return; // Handle tools separately
+            
+            const metaItem = document.createElement('div');
+            metaItem.className = 'mcp-meta-item';
+            
+            const label = document.createElement('span');
+            label.className = 'mcp-meta-label';
+            label.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+            
+            const val = document.createElement('span');
+            val.className = 'mcp-meta-value';
+            val.textContent = value;
+            
+            metaItem.appendChild(label);
+            metaItem.appendChild(val);
+            mcpContainer.appendChild(metaItem);
+        });
+        
+        // Render tools if present
+        if (project.mcpDetails.tools && Array.isArray(project.mcpDetails.tools)) {
+            const toolsSection = document.createElement('div');
+            toolsSection.className = 'mcp-tools-section';
+            
+            const toolsHeader = document.createElement('div');
+            toolsHeader.className = 'mcp-tools-header';
+            toolsHeader.innerHTML = '<i data-lucide="wrench" class="w-3 h-3"></i> Capabilities';
+            
+            const toolsGrid = document.createElement('div');
+            toolsGrid.className = 'mcp-tools-grid';
+            
+            project.mcpDetails.tools.forEach(tool => {
+                const badge = document.createElement('div');
+                badge.className = 'mcp-tool-badge';
+                badge.textContent = tool;
+                toolsGrid.appendChild(badge);
+            });
+            
+            toolsSection.appendChild(toolsHeader);
+            toolsSection.appendChild(toolsGrid);
+            mcpContainer.appendChild(toolsSection);
+        }
+        
+        card.appendChild(mcpContainer);
+    }
 
     // Add tags if present
     if (project.tags && Array.isArray(project.tags) && project.tags.length > 0) {
@@ -388,8 +479,13 @@ async function initShowroom() {
         initTabs();
 
         // Load project data
-        const data = await loadProjects();
-        currentProjects = data.projects || [];
+        const [projectsData, mcpsData] = await Promise.all([
+            loadProjects(),
+            loadMCPs()
+        ]);
+
+        currentProjects = projectsData.projects || [];
+        currentMCPs = mcpsData.projects || [];
 
         // Initial Render
         if (activeTab === 'tab-projects') {
@@ -399,7 +495,11 @@ async function initShowroom() {
                 displayErrorMessage('No projects available to display.');
             }
         } else {
-            renderMCPShowcase();
+            if (currentMCPs.length > 0) {
+                renderAllProjects(currentMCPs);
+            } else {
+                renderMCPShowcase();
+            }
         }
 
         // Initialize Lucide icons
@@ -454,7 +554,11 @@ function handleTabSwitch(tabId) {
             displayErrorMessage('No projects available to display.');
         }
     } else if (tabId === 'tab-mcp') {
-        renderMCPShowcase();
+        if (currentMCPs.length > 0) {
+            renderAllProjects(currentMCPs);
+        } else {
+            renderMCPShowcase();
+        }
     }
 
     // Refresh icons for new content
