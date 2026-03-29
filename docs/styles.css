@@ -668,6 +668,12 @@ footer a:hover {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     order: 2.5; /* Position between tags and description */
+    color: var(--color-text-main);
+}
+
+body.dark-theme .project-mcp-details {
+    background: rgba(255, 255, 255, 0.03);
+    border-left-color: #3b82f6;
 }
 
 .mcp-meta-item {
@@ -683,9 +689,17 @@ footer a:hover {
     font-weight: 500;
 }
 
+body.dark-theme .mcp-meta-label {
+    color: var(--color-text-muted);
+}
+
 .mcp-meta-value {
     color: var(--color-accent-blue);
     font-weight: 600;
+}
+
+body.dark-theme .mcp-meta-value {
+    color: #60a5fa;
 }
 
 .mcp-tools-section {
@@ -715,10 +729,13 @@ footer a:hover {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: var(--color-text-muted);
 }
 
 body.dark-theme .mcp-tool-badge {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-text-main);
 }
 
 @keyframes fadeInUp {
