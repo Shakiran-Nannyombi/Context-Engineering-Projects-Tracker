@@ -23,6 +23,117 @@
             }
         },
         {
+            "name": "Londoolink AI",
+            "description": "Your Intelligent Digital Twin. A comprehensive AI-powered personal assistant that manages emails, calendars, and communications with a LangGraph multi-agent architecture.",
+            "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
+            "tags": [
+                "Web",
+                "AI",
+                "FastAPI",
+                "Next.js",
+                "LangGraph",
+                "OpenAI",
+                "PostgreSQL",
+                "Tailwind CSS"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://londoolink-ai.vercel.app/",
+            "image": "./assets/Project_icons/loondolinkAI.png",
+            "theme": {
+                "primary": "#4fd1c5",
+                "background": "#0f1419"
+            }
+        },
+        {
+            "name": "CommunitAI",
+            "description": "An AI-powered Chief of Staff for community leaders. Automatically transcribes meetings, extracts action items, analyzes sentiment, and generates follow-up drafts.",
+            "url": "https://github.com/Shakiran-Nannyombi/CommunitAI",
+            "tags": [
+                "Web",
+                "AI",
+                "Next.js",
+                "FastAPI",
+                "DigitalOcean",
+                "Gradient AI",
+                "Groq",
+                "PostgreSQL"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://communit-ai.vercel.app",
+            "image": "./assets/Project_icons/communitAI.svg",
+            "theme": {
+                "primary": "#064e3b",
+                "background": "#57c801"
+            }
+        },
+        {
+            "name": "Cortex",
+            "description": "A cloud-agnostic document processing platform (upload → OCR → search → organize). Built with React, Flask, PostgreSQL, and Docker.",
+            "url": "https://github.com/Shakiran-Nannyombi/Cortex",
+            "tags": [
+                "Web",
+                "AI",
+                "Flask",
+                "React",
+                "PostgreSQL",
+                "Docker",
+                "OCR"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://www.cortexug.duckdns.org/",
+            "image": "./assets/Project_icons/cortex.svg",
+            "theme": {
+                "primary": "#00d2ff",
+                "background": "#0154C8"
+            }
+        },
+        {
+            "name": "SonoQuip",
+            "description": "An interactive PWA for sonography learning and verification. Features curated quizzes, role-based dashboards, and QR-based credential verification.",
+            "url": "https://github.com/Shakiran-Nannyombi/SonoQuip",
+            "tags": [
+                "Web",
+                "PWA",
+                "Vue 3",
+                "Vite",
+                "TypeScript",
+                "Tailwind CSS"
+            ],
+            "status": "Done",
+            "category": "Web/PWA",
+            "liveDemo": "https://sono-quip.vercel.app/",
+            "image": "./assets/Project_icons/sonoquip.svg",
+            "theme": {
+                "primary": "#47c9db",
+                "background": "#083839"
+            }
+        },
+        {
+            "name": "Finui",
+            "description": "A financial inclusion app for informal workers — market vendors, boda boda riders, and tailors. Uses alternative data to build a verifiable Trust Score, unlocking micro-savings and credit tiers without formal pay slips.",
+            "url": "https://github.com/Shakiran-Nannyombi/finui",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "Tailwind CSS",
+                "Node.js",
+                "Express",
+                "FinTech"
+            ],
+            "status": "Done",
+            "category": "Web/FinTech",
+            "liveDemo": "https://finui.vercel.app/",
+            "image": "./assets/Project_icons/finui.svg",
+            "theme": {
+                "primary": "#10B981",
+                "background": "#0f172a"
+            }
+        },
+        {
             "name": "UI Garden: The Sentient Design Arcade",
             "description": "A gamified design playground with Gemini AI integration. Built with React, TypeScript, Vite, Framer Motion, and Gemini API.",
             "url": "https://github.com/Shakiran-Nannyombi/ui-garden",
@@ -105,51 +216,6 @@
             }
         },
         {
-            "name": "Cortex",
-            "description": "A cloud-agnostic document processing platform (upload → OCR → search → organize). Built with React, Flask, PostgreSQL, and Docker.",
-            "url": "https://github.com/Shakiran-Nannyombi/Cortex",
-            "tags": [
-                "Web",
-                "AI",
-                "Flask",
-                "React",
-                "PostgreSQL",
-                "Docker",
-                "OCR"
-            ],
-            "status": "Done",
-            "category": "Web/AI",
-            "liveDemo": "https://www.cortexug.duckdns.org/",
-            "image": "./assets/Project_icons/cortex.svg",
-            "theme": {
-                "primary": "#00d2ff",
-                "background": "#0154C8"
-            }
-        },
-        {
-            "name": "CommunitAI",
-            "description": "An AI-powered Chief of Staff for community leaders. Automatically transcribes meetings, extracts action items, analyzes sentiment, and generates follow-up drafts.",
-            "url": "https://github.com/Shakiran-Nannyombi/CommunitAI",
-            "tags": [
-                "Web",
-                "AI",
-                "Next.js",
-                "FastAPI",
-                "DigitalOcean",
-                "Gradient AI",
-                "Groq",
-                "PostgreSQL"
-            ],
-            "status": "Done",
-            "category": "Web/AI",
-            "liveDemo": "https://communit-ai.vercel.app",
-            "image": "./assets/Project_icons/communitAI.svg",
-            "theme": {
-                "primary": "#064e3b",
-                "background": "#57c801"
-            }
-        },
-        {
             "name": "Kylax Bank",
             "description": "A next-generation AI-native banking platform featuring animated glassmorphism UI, real-time application tracking, and AI-driven credit assessment visualizations.",
             "url": "https://github.com/Shakiran-Nannyombi/kylaxBank",
@@ -193,51 +259,6 @@
             }
         },
         {
-            "name": "Londoolink AI",
-            "description": "Your Intelligent Digital Twin. A comprehensive AI-powered personal assistant that manages emails, calendars, and communications with a LangGraph multi-agent architecture.",
-            "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
-            "tags": [
-                "Web",
-                "AI",
-                "FastAPI",
-                "Next.js",
-                "LangGraph",
-                "OpenAI",
-                "PostgreSQL",
-                "Tailwind CSS"
-            ],
-            "status": "Done",
-            "category": "Web/AI",
-            "liveDemo": "https://londoolink-ai.vercel.app/",
-            "image": "./assets/Project_icons/loondolinkAI.png",
-            "theme": {
-                "primary": "#4fd1c5",
-                "background": "#0f1419"
-            }
-        },
-        {
-            "name": "Finui",
-            "description": "A financial inclusion app for informal workers — market vendors, boda boda riders, and tailors. Uses alternative data to build a verifiable Trust Score, unlocking micro-savings and credit tiers without formal pay slips.",
-            "url": "https://github.com/Shakiran-Nannyombi/finui",
-            "tags": [
-                "Web",
-                "AI",
-                "React",
-                "Tailwind CSS",
-                "Node.js",
-                "Express",
-                "FinTech"
-            ],
-            "status": "Done",
-            "category": "Web/FinTech",
-            "liveDemo": "https://finui.vercel.app/",
-            "image": "./assets/Project_icons/finui.svg",
-            "theme": {
-                "primary": "#10B981",
-                "background": "#0f172a"
-            }
-        },
-        {
             "name": "Komorembi",
             "description": "A full-stack AI chat agent with RAG capabilities, LINE messaging integration, and an admin dashboard. Features bilingual support (English & Japanese), live stats, chat logs, and a knowledge base manager.",
             "url": "https://github.com/Shakiran-Nannyombi/Chat-rag-Agent-MVP",
@@ -260,28 +281,7 @@
                 "primary": "#a78bfa",
                 "background": "#1e1b4b"
             }
-        },
-        {
-            "name": "SonoQuip",
-            "description": "An interactive PWA for sonography learning and verification. Features curated quizzes, role-based dashboards, and QR-based credential verification.",
-            "url": "https://github.com/Shakiran-Nannyombi/SonoQuip",
-            "tags": [
-                "Web",
-                "PWA",
-                "Vue 3",
-                "Vite",
-                "TypeScript",
-                "Tailwind CSS"
-            ],
-            "status": "Done",
-            "category": "Web/PWA",
-            "liveDemo": "https://sono-quip.vercel.app/",
-            "image": "./assets/Project_icons/sonoquip.svg",
-            "theme": {
-                "primary": "#47c9db",
-                "background": "#083839"
-            }
         }
     ],
-    "lastUpdated": "2026-03-28T00:00:00Z"
+    "lastUpdated": "2026-03-29T07:29:00Z"
 }
