@@ -28,6 +28,12 @@ This repository is my public **portfolio** + **project management hub** for all 
 
 Explore my completed projects in an interactive visual gallery with live demos and source code.
 
+## Project Documentation
+
+**[→ Read the Full Project Documentation](https://aifest-workshop.notion.site/Context-Engineering-Projects-Tracker-Project-Documentation-344e4543f8438188a281fafcab8d0a73)**
+
+Detailed technical documentation is available on Notion, including architecture, workflows, deployment, and maintenance guidance.
+
 ## Master Prompts & Development Board
 
 I manage all project development using GitHub Projects, where each project includes:
