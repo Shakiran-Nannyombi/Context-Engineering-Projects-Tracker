@@ -259,6 +259,29 @@
             }
         },
         {
+            "name": "CrownCheck AI",
+            "description": "AI-powered haircare intelligence platform with live AR hairstyle try-on. Features real-time MediaPipe hair segmentation, 478-point face landmark tracking, canvas-drawn hairstyle and makeup filters, a curated lookbook, and a consultant marketplace — all built with React, TypeScript, and Tailwind CSS.",
+            "url": "https://github.com/Shakiran-Nannyombi/CrownChecker-AI",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "MediaPipe",
+                "AR",
+                "Vite"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://crown-checker-ai.vercel.app/",
+            "image": "./assets/Project_icons/crownchecker.svg",
+            "theme": {
+                "primary": "#f4b3db",
+                "background": "#1c1018"
+            }
+        },
+        {
             "name": "Komorembi",
             "description": "A full-stack AI chat agent with RAG capabilities, LINE messaging integration, and an admin dashboard. Features bilingual support (English & Japanese), live stats, chat logs, and a knowledge base manager.",
             "url": "https://github.com/Shakiran-Nannyombi/Chat-rag-Agent-MVP",
@@ -283,5 +306,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-03-29T12:35:00Z"
+    "lastUpdated": "2026-04-17T00:00:00Z"
 }
