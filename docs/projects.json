@@ -319,7 +319,7 @@
             ],
             "status": "Done",
             "category": "Web/Productivity",
-            "liveDemo": "https://v0.app/chat/projects/prj_F3mGBE0ikWDRpyRAZsvvi4ZNmUBX",
+            "liveDemo": "https://v0-flowday.vercel.app",
             "image": "./assets/Project_icons/flowday.png",
             "theme": {
                 "primary": "#3b82f6",
