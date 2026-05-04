@@ -304,6 +304,27 @@
                 "primary": "#a78bfa",
                 "background": "#1e1b4b"
             }
+        },
+        {
+            "name": "FlowDay",
+            "description": "A calm accountability partner that plans with your procrastination patterns, not against them. Features a time-block timeline, gentle nudges, and adapts when you slip — built for over-planners and under-doers.",
+            "url": "https://github.com/Shakiran-Nannyombi/v0-flowday-planner-agent",
+            "tags": [
+                "Web",
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "Radix UI",
+                "Productivity"
+            ],
+            "status": "Done",
+            "category": "Web/Productivity",
+            "liveDemo": "https://v0.app/chat/projects/prj_F3mGBE0ikWDRpyRAZsvvi4ZNmUBX",
+            "image": "./assets/Project_icons/flowday.png",
+            "theme": {
+                "primary": "#3b82f6",
+                "background": "#0f172a"
+            }
         }
     ],
     "lastUpdated": "2026-04-17T00:00:00Z"
