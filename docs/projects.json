@@ -1,28 +1,6 @@
 {
     "projects": [
         {
-            "name": "Mzee Chakula",
-            "description": "An intelligent nutrition recommendation and meal-planning assistant. Features a voice-enabled chat interface, personalized caloric needs estimation, and AI-driven local food recommendations based on nutritional similarity.",
-            "url": "https://github.com/MzeeChakula/Model-Testing",
-            "tags": [
-                "Web",
-                "AI",
-                "Vue 3",
-                "FastAPI",
-                "Python",
-                "Nutrition",
-                "Voice AI"
-            ],
-            "status": "Done",
-            "category": "Web/AI",
-            "liveDemo": "https://mzeechakula.vercel.app/",
-            "image": "./assets/Project_icons/MzeeChakula.svg",
-            "theme": {
-                "primary": "#d90000",
-                "background": "#1a1a1a"
-            }
-        },
-        {
             "name": "Londoolink AI",
             "description": "Your Intelligent Digital Twin. A comprehensive AI-powered personal assistant that manages emails, calendars, and communications with a LangGraph multi-agent architecture.",
             "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
