@@ -348,9 +348,10 @@ body.dark-theme .icon-moon {
 .profile-image {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
+    border-radius: 8px;
+    object-fit: contain;
     border: 2px solid var(--color-primary-alpha-20);
+    background: transparent;
 }
 
 .profile-name {
