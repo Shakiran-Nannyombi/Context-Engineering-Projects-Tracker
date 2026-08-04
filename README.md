@@ -19,7 +19,7 @@
 
 ## About Me
 
-Hi! I'm **Shakiran Nannyombi** — building under the brand **@DevKiran256** across **AI**, **Android**, **Web**, **Python**, and **Bitcoin**.
+Hi! I'm **Shakiran Nannyombi** building under the brand **@DevKiran256** across **AI**, **Android**, **Web**, **Python**, and **Bitcoin**.
 
 This repository is my public **portfolio + project management hub** for all my context-engineered projects.
 
@@ -47,14 +47,14 @@ I manage all project development using GitHub Projects, where each project inclu
 ## Tech Stack
 
 <p>
-  <img src="https://img.shields.io/badge/Kotlin-2EE6A6?style=for-the-badge&logo=kotlin&logoColor=0A0A0A"/>
-  <img src="https://img.shields.io/badge/Jetpack%20Compose-2EE6A6?style=for-the-badge&logo=android&logoColor=0A0A0A"/>
-  <img src="https://img.shields.io/badge/Python-2EE6A6?style=for-the-badge&logo=python&logoColor=0A0A0A"/>
-  <img src="https://img.shields.io/badge/Django-2EE6A6?style=for-the-badge&logo=django&logoColor=0A0A0A"/>
-  <img src="https://img.shields.io/badge/FastAPI-2EE6A6?style=for-the-badge&logo=fastapi&logoColor=0A0A0A"/>
-  <img src="https://img.shields.io/badge/Streamlit-2EE6A6?style=for-the-badge&logo=streamlit&logoColor=0A0A0A"/>
-  <img src="https://img.shields.io/badge/TypeScript-2EE6A6?style=for-the-badge&logo=typescript&logoColor=0A0A0A"/>
-  <img src="https://img.shields.io/badge/Docker-2EE6A6?style=for-the-badge&logo=docker&logoColor=0A0A0A"/>
+  <img src="https://img.shields.io/badge/Kotlin-FFFFFF?style=for-the-badge&logo=kotlin&logoColor=1FAE79&labelColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-FFFFFF?style=for-the-badge&logo=android&logoColor=1FAE79&labelColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/Python-FFFFFF?style=for-the-badge&logo=python&logoColor=1FAE79&labelColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/Django-FFFFFF?style=for-the-badge&logo=django&logoColor=1FAE79&labelColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/FastAPI-FFFFFF?style=for-the-badge&logo=fastapi&logoColor=1FAE79&labelColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/Streamlit-FFFFFF?style=for-the-badge&logo=streamlit&logoColor=1FAE79&labelColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/TypeScript-FFFFFF?style=for-the-badge&logo=typescript&logoColor=1FAE79&labelColor=FFFFFF"/>
+  <img src="https://img.shields.io/badge/Docker-FFFFFF?style=for-the-badge&logo=docker&logoColor=1FAE79&labelColor=FFFFFF"/>
 </p>
 
 ## Context Engineering Energy

@@ -559,6 +559,8 @@ function handleTabSwitch(tabId) {
         } else {
             renderMCPShowcase();
         }
+    } else if (tabId === 'tab-papers') {
+        renderPapersShowcase();
     }
 
     // Refresh icons for new content
@@ -581,6 +583,25 @@ function renderMCPShowcase() {
         <h2>Model Context Protocol Hub</h2>
         <p>A specialized ecosystem for connecting LLMs to local tools, databases, and APIs. This space will showcase custom MCP servers, prompts, and context engineering tools.</p>
         <p style="margin-top: 1rem; font-weight: 600; color: var(--color-accent-blue);">Coming Soon: Integrated Tools Registry</p>
+    `;
+
+    container.appendChild(placeholder);
+}
+
+/**
+ * Renders the Papers & Articles placeholder
+ */
+function renderPapersShowcase() {
+    const container = document.getElementById('project-grid');
+    if (!container) return;
+
+    const placeholder = document.createElement('div');
+    placeholder.className = 'mcp-placeholder';
+    placeholder.innerHTML = `
+        <i data-lucide="newspaper"></i>
+        <h2>Papers & Articles</h2>
+        <p>Research notes, technical write-ups, and articles on AI, context engineering, and building real-world systems.</p>
+        <p style="margin-top: 1rem; font-weight: 600; color: var(--color-accent-blue);">Coming Soon</p>
     `;
 
     container.appendChild(placeholder);
