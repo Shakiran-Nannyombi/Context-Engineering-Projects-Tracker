@@ -1,11 +1,11 @@
 <br><br>
 
-<h1 align="center">AI-Powered Projects by @DevKiran256</h1>
+<h1 align="center">AI-Powered Projects by Shakiran</h1>
  <p align="center">
    <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="assets/devkiran256-logo-dark.svg">
-     <source media="(prefers-color-scheme: light)" srcset="assets/devkiran256-logo-light.png">
-     <img alt="DevKiran256 Logo" src="assets/devkiran256-logo-light.png" width="320">
+     <source media="(prefers-color-scheme: dark)" srcset="assets/devkiran256-lockup-dark.svg">
+     <source media="(prefers-color-scheme: light)" srcset="assets/devkiran256-lockup-light.svg">
+     <img alt="DevKiran256 Logo" src="assets/devkiran256-lockup-light.svg" width="320">
    </picture>
  </p>
 

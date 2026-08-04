@@ -226,10 +226,11 @@ header {
 }
 
 .brand-logo {
-    height: 42px;
-    width: auto;
+    height: 48px;
+    width: 48px;
     object-fit: contain;
     flex-shrink: 0;
+    border-radius: 10px;
 }
 
 /* Theme-adaptive logo display */
