@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dotGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2EE6A6"/>
+      <stop offset="100%" stop-color="#178F63"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .dot { fill: url(#dotGradL); }
+      .dotk { fill: #0A0A0A; }
+    </style>
+  </defs>
+  <rect class="bg" width="200" height="200" rx="42"/>
+
+  <circle class="dot" cx="60" cy="44" r="11"/>
+  <circle class="dot" cx="60" cy="71" r="12"/>
+  <circle class="dot" cx="60" cy="100" r="13"/>
+  <circle class="dot" cx="60" cy="129" r="12"/>
+  <circle class="dot" cx="60" cy="156" r="11"/>
+
+  <circle class="dotk" cx="84" cy="93" r="7"/>
+  <circle class="dotk" cx="107" cy="79" r="8.5"/>
+  <circle class="dotk" cx="130" cy="63" r="10"/>
+  <circle class="dot" cx="154" cy="46" r="11.5"/>
+
+  <circle class="dotk" cx="84" cy="107" r="7"/>
+  <circle class="dotk" cx="107" cy="121" r="8.5"/>
+  <circle class="dotk" cx="130" cy="137" r="10"/>
+  <circle class="dot" cx="154" cy="154" r="11.5"/>
+</svg>
