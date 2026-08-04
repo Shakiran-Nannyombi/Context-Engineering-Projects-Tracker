@@ -14,14 +14,14 @@
             ],
             "status": "Building",
             "category": "Sessions/Tutorials",
-            "liveDemo": "https://shakiran-nannyombi.github.io/AifestCursor/",
+            "liveDemo": "https://aifest-cursor.vercel.app/",
             "image": "./assets/Project_icons/aliasboard.svg",
             "theme": {
-                "primary": "#2EE6A6",
-                "background": "#0A0A0A"
+                "primary": "#0EA5E9",
+                "background": "#020617"
             }
         }
     ],
-    "lastUpdated": "2026-08-04T20:35:00Z"
+    "lastUpdated": "2026-08-04T20:45:00Z"
 }
 
