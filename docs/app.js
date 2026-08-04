@@ -6,7 +6,30 @@
 let currentProjects = [];
 let currentMCPs = [];
 let currentSessions = [];
+let currentPapers = [];
 let activeTab = 'tab-projects';
+
+/**
+ * Returns true for http(s) URLs or site-relative asset paths (e.g. PDFs).
+ * @param {string} url
+ * @returns {boolean}
+ */
+function isAcceptableProjectUrl(url) {
+    if (typeof url !== 'string' || !url.trim()) {
+        return false;
+    }
+
+    if (url.startsWith('./') || url.startsWith('/') || url.startsWith('../')) {
+        return true;
+    }
+
+    try {
+        const parsed = new URL(url);
+        return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+    } catch (error) {
+        return false;
+    }
+}
 
 /**
  * Validates a project object has all required fields
@@ -22,10 +45,7 @@ function validateProject(project) {
         return false;
     }
 
-    // Validate URL format
-    try {
-        new URL(project.url);
-    } catch (error) {
+    if (!isAcceptableProjectUrl(project.url)) {
         console.warn(`Project has invalid URL: ${project.url}`, project);
         return false;
     }
@@ -148,6 +168,41 @@ async function loadSessions() {
     }
 }
 
+/**
+ * Loads paper/article entries from papers.json
+ * @returns {Promise<Object>} - Data object with projects array
+ */
+async function loadPapers() {
+    try {
+        const response = await fetch('papers.json');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!data || typeof data !== 'object') {
+            throw new Error('Invalid data format: expected object');
+        }
+
+        if (!Array.isArray(data.projects)) {
+            throw new Error('Invalid data format: projects must be an array');
+        }
+
+        const validProjects = data.projects.filter(validateProject);
+
+        return {
+            projects: validProjects,
+            lastUpdated: data.lastUpdated
+        };
+
+    } catch (error) {
+        console.error('Failed to load papers:', error);
+        return { projects: [] };
+    }
+}
+
 
 /**
  * Displays an error message to the user
@@ -165,17 +220,19 @@ function displayErrorMessage(message) {
 }
 
 /**
- * Validates a URL before navigation
- * @param {string} url - URL to validate
- * @returns {boolean} - True if URL is valid, false otherwise
+ * Resolves a navigation target to an absolute URL when possible.
+ * @param {string} url
+ * @returns {string|null}
  */
-function isValidNavigationURL(url) {
+function resolveNavigationURL(url) {
+    if (!isAcceptableProjectUrl(url)) {
+        return null;
+    }
+
     try {
-        const urlObject = new URL(url);
-        // Check for valid protocols
-        return urlObject.protocol === 'http:' || urlObject.protocol === 'https:';
+        return new URL(url, window.location.href).href;
     } catch (error) {
-        return false;
+        return null;
     }
 }
 
@@ -186,15 +243,15 @@ function isValidNavigationURL(url) {
  * @returns {boolean} - True if navigation succeeded, false otherwise
  */
 function safeNavigate(url, cardElement) {
-    // Validate URL before navigation
-    if (!isValidNavigationURL(url)) {
+    const resolved = resolveNavigationURL(url);
+    if (!resolved) {
         console.error('Navigation error: Invalid URL', url);
         displayNavigationError(cardElement, 'Invalid URL');
         return false;
     }
 
     try {
-        window.open(url, '_blank', 'noopener,noreferrer');
+        window.open(resolved, '_blank', 'noopener,noreferrer');
         return true;
     } catch (error) {
         console.error('Navigation error:', error, 'URL:', url);
@@ -315,14 +372,20 @@ function renderProjectCard(project) {
         linksContainer.appendChild(liveDemoLink);
     }
 
-    // Create repository link
+    // Create repository / PDF link
     const repoLink = document.createElement('a');
     repoLink.href = project.url;
-    repoLink.innerHTML = '<i data-lucide="github" class="w-4 h-4"></i> Repository';
+    const isPdf = String(project.url).toLowerCase().endsWith('.pdf') || project.category === 'Papers';
+    if (isPdf) {
+        repoLink.innerHTML = '<i data-lucide="file-text" class="w-4 h-4"></i> Read PDF';
+        repoLink.setAttribute('aria-label', `Read PDF: ${project.name}`);
+    } else {
+        repoLink.innerHTML = '<i data-lucide="github" class="w-4 h-4"></i> Repository';
+        repoLink.setAttribute('aria-label', `View ${project.name} repository`);
+    }
     repoLink.className = 'project-link-repo';
     repoLink.setAttribute('target', '_blank');
     repoLink.setAttribute('rel', 'noopener noreferrer');
-    repoLink.setAttribute('aria-label', `View ${project.name} repository`);
 
     // Prevent link click from bubbling to card click and add error handling
     repoLink.addEventListener('click', (e) => {
@@ -516,15 +579,17 @@ async function initShowroom() {
         initTabs();
 
         // Load project data
-        const [projectsData, mcpsData, sessionsData] = await Promise.all([
+        const [projectsData, mcpsData, sessionsData, papersData] = await Promise.all([
             loadProjects(),
             loadMCPs(),
-            loadSessions()
+            loadSessions(),
+            loadPapers()
         ]);
 
         currentProjects = projectsData.projects || [];
         currentMCPs = mcpsData.projects || [];
         currentSessions = sessionsData.projects || [];
+        currentPapers = papersData.projects || [];
 
         // Initial Render
         if (activeTab === 'tab-projects') {
@@ -546,7 +611,11 @@ async function initShowroom() {
                 renderSessionsShowcase();
             }
         } else if (activeTab === 'tab-papers') {
-            renderPapersShowcase();
+            if (currentPapers.length > 0) {
+                renderAllProjects(currentPapers);
+            } else {
+                renderPapersShowcase();
+            }
         }
 
         // Initialize Lucide icons
@@ -607,7 +676,11 @@ function handleTabSwitch(tabId) {
             renderMCPShowcase();
         }
     } else if (tabId === 'tab-papers') {
-        renderPapersShowcase();
+        if (currentPapers.length > 0) {
+            renderAllProjects(currentPapers);
+        } else {
+            renderPapersShowcase();
+        }
     } else if (tabId === 'tab-sessions') {
         if (currentSessions.length > 0) {
             renderAllProjects(currentSessions);

@@ -1,0 +1,65 @@
+{
+    "lastUpdated": "2026-08-04T23:48:00Z",
+    "projects": [
+        {
+            "name": "Mzee Chakula: Graph-Enhanced AI for Elderly Nutrition",
+            "description": "Knowledge-graph + GNN ensemble for culturally grounded elderly nutrition planning in Uganda — 1000+ local foods, multilingual PWA with voice, test AUC 0.92 and 15ms inference for low-resource deployment.",
+            "url": "./assets/papers/Mzee_Chakula_Graph_Enhanced_AI.pdf",
+            "tags": [
+                "Paper",
+                "GNN",
+                "Knowledge Graph",
+                "Healthcare",
+                "Nutrition"
+            ],
+            "status": "Done",
+            "category": "Papers",
+            "liveDemo": "",
+            "image": "./assets/Project_icons/paper-mzeechakula.svg",
+            "theme": {
+                "primary": "#B13D03",
+                "background": "#FFF7ED"
+            }
+        },
+        {
+            "name": "Decoupled Multimodal Fusion for Early TB Triaging",
+            "description": "Multimodal ML system fusing cough audio (ResNet CNN) with clinical metadata for accessible tuberculosis screening in resource-limited settings. Late fusion meets WHO screening benchmarks (AUC 0.949).",
+            "url": "./assets/papers/SW-ML-42.pdf",
+            "tags": [
+                "Paper",
+                "ML",
+                "Multimodal",
+                "Healthcare",
+                "Tuberculosis"
+            ],
+            "status": "Done",
+            "category": "Papers",
+            "liveDemo": "",
+            "image": "./assets/Project_icons/paper-tb.svg",
+            "theme": {
+                "primary": "#0D9488",
+                "background": "#F0FDFA"
+            }
+        },
+        {
+            "name": "Can a Computer Think? Critique of JaJJa-Care",
+            "description": "Philosophical critique of JaJJa-Care, a hyper-contextual AI for geriatric care in Uganda — Strong vs Weak AI, Searle’s Chinese Room, and multiple intelligences applied to culturally grounded caregiver support.",
+            "url": "./assets/papers/JaJJa_Care_Research_Paper.pdf",
+            "tags": [
+                "Paper",
+                "AI Ethics",
+                "Philosophy",
+                "Healthcare",
+                "Uganda"
+            ],
+            "status": "Done",
+            "category": "Papers",
+            "liveDemo": "",
+            "image": "./assets/Project_icons/paper-jajja.svg",
+            "theme": {
+                "primary": "#7C3AED",
+                "background": "#F5F3FF"
+            }
+        }
+    ]
+}
