@@ -195,23 +195,61 @@ header {
     justify-content: space-between;
     background: var(--color-bg-dark);
     padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-glass);
+    gap: 1.5rem;
 }
 
 /* The CLI Icon block was removed */
 
-header h1 {
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 0;
+.header-titles {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
+}
+
+header h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0;
+    font-family: var(--font-display);
+    color: var(--color-text-main);
+}
+
+.header-subtitle {
+    font-size: 0.825rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: var(--font-sans);
 }
 
 .header-actions {
     display: flex;
     align-items: center;
     gap: 1.25rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+    }
+    
+    .header-titles {
+        gap: 0.35rem;
+    }
+    
+    .header-actions {
+        width: 100%;
+        justify-content: space-between;
+        border-top: 1px solid var(--border-glass);
+        padding-top: 0.75rem;
+    }
 }
 
 .theme-toggle {

@@ -1,13 +1,12 @@
 <br><br>
 
-<h1 align="center">Context Engineering Hub 💜</h1>
+<h1 align="center">AI-Powered Projects by Shakiran 💜</h1>
  <p align="center">
    <img src="assets/devK.png" alt="Shakiran's profile" width="160" />
  </p>
 
 <p align="center">
-  <b>Portfolio + Project Tracker</b><br/>
-  Android • Web • Python • AI • Bitcoin
+  <b>Exploring AI, frontend engineering, and user-centered digital experiences through real-world projects.</b>
 </p>
 
 <p align="center">

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #0A0A0A; }
+      .bracket { fill: none; stroke: #2EE6A6; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+      .slash { fill: none; stroke: #F7F7F7; stroke-width: 14; stroke-linecap: round; }
+      .word { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; fill: #F7F7F7; }
+      .accent { fill: #2EE6A6; }
+      .num { font-family: Arial, sans-serif; font-weight: 700; fill: #2EE6A6; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="640" height="220" rx="0"/>
+
+  <!-- icon: <  /  > -->
+  <g transform="translate(30,40)">
+    <polyline class="bracket" points="46,20 6,70 46,120"/>
+    <line class="slash" x1="66" y1="130" x2="94" y2="10"/>
+    <polyline class="bracket" points="114,20 154,70 114,120"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="215" y="128" font-size="72" class="word">Dev<tspan class="accent">Kiran</tspan></text>
+  <text x="215" y="170" font-size="30" letter-spacing="6" class="num">256</text>
+</svg>
