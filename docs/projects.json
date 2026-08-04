@@ -1,8 +1,31 @@
 {
     "projects": [
         {
-            "name": "Cenli — Dev Clarifier AI",
-            "description": "An autonomous Developer Productivity Engineering (DPE) guardrail agent that intercepts, refactors, and gates AI-generated code before it hits main — with Phoenix MCP self-introspection, LLM-as-a-Judge auditing, and a real-time React dashboard.",
+            "name": "OpenImpact",
+            "description": "Charity receipts you can follow \u2014 donor to organisation to recipient with proof of use, privacy-preserving briefs, and a server-side trust score. Built by Team HackonChain with Vite/React, Supabase, and a Web3 settlement stub.",
+            "url": "https://github.com/Tashbme005/HackonChain",
+            "tags": [
+                "Web",
+                "Web3",
+                "React",
+                "Vite",
+                "Supabase",
+                "TanStack Router",
+                "Charity",
+                "Hackathon"
+            ],
+            "status": "Done",
+            "category": "Web/Web3",
+            "liveDemo": "https://open-impact.vercel.app/",
+            "image": "./assets/Project_icons/openimpact.png",
+            "theme": {
+                "primary": "#1E8F6F",
+                "background": "#12333B"
+            }
+        },
+        {
+            "name": "Cenli \u2014 Dev Clarifier AI",
+            "description": "An autonomous Developer Productivity Engineering (DPE) guardrail agent that intercepts, refactors, and gates AI-generated code before it hits main \u2014 with Phoenix MCP self-introspection, LLM-as-a-Judge auditing, and a real-time React dashboard.",
             "url": "https://github.com/Shakiran-Nannyombi/Cenli",
             "tags": [
                 "Web",
@@ -25,7 +48,7 @@
         },
         {
             "name": "Anime-Themed Portfolio",
-            "description": "A modern single-page portfolio template blending clean tech UI with vibrant anime-inspired design. Built through a Stitch → Figma → Antigravity MCP pipeline with cel-shaded character art across every section.",
+            "description": "A modern single-page portfolio template blending clean tech UI with vibrant anime-inspired design. Built through a Stitch \u2192 Figma \u2192 Antigravity MCP pipeline with cel-shaded character art across every section.",
             "url": "https://github.com/Shakiran-Nannyombi/Anime-themed-Portfolio",
             "tags": [
                 "Web",
@@ -47,7 +70,7 @@
         },
         {
             "name": "FlowDay",
-            "description": "A calm accountability partner that plans with your procrastination patterns, not against them. Features a time-block timeline, gentle nudges, and adapts when you slip — built for over-planners and under-doers.",
+            "description": "A calm accountability partner that plans with your procrastination patterns, not against them. Features a time-block timeline, gentle nudges, and adapts when you slip \u2014 built for over-planners and under-doers.",
             "url": "https://github.com/Shakiran-Nannyombi/v0-flowday-planner-agent",
             "tags": [
                 "Web",
@@ -68,7 +91,7 @@
         },
         {
             "name": "CrownCheck AI",
-            "description": "AI-powered haircare intelligence platform with live AR hairstyle try-on. Features real-time MediaPipe hair segmentation, 478-point face landmark tracking, canvas-drawn hairstyle and makeup filters, a curated lookbook, and a consultant marketplace — all built with React, TypeScript, and Tailwind CSS.",
+            "description": "AI-powered haircare intelligence platform with live AR hairstyle try-on. Features real-time MediaPipe hair segmentation, 478-point face landmark tracking, canvas-drawn hairstyle and makeup filters, a curated lookbook, and a consultant marketplace \u2014 all built with React, TypeScript, and Tailwind CSS.",
             "url": "https://github.com/Shakiran-Nannyombi/CrownChecker-AI",
             "tags": [
                 "Web",
@@ -115,7 +138,7 @@
         },
         {
             "name": "Finui",
-            "description": "A financial inclusion app for informal workers — market vendors, boda boda riders, and tailors. Uses alternative data to build a verifiable Trust Score, unlocking micro-savings and credit tiers without formal pay slips.",
+            "description": "A financial inclusion app for informal workers \u2014 market vendors, boda boda riders, and tailors. Uses alternative data to build a verifiable Trust Score, unlocking micro-savings and credit tiers without formal pay slips.",
             "url": "https://github.com/Shakiran-Nannyombi/finui",
             "tags": [
                 "Web",
@@ -247,7 +270,7 @@
         },
         {
             "name": "Cortex",
-            "description": "A cloud-agnostic document processing platform (upload → OCR → search → organize). Built with React, Flask, PostgreSQL, and Docker.",
+            "description": "A cloud-agnostic document processing platform (upload \u2192 OCR \u2192 search \u2192 organize). Built with React, Flask, PostgreSQL, and Docker.",
             "url": "https://github.com/Shakiran-Nannyombi/Cortex",
             "tags": [
                 "Web",
@@ -350,5 +373,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T20:14:15Z"
+    "lastUpdated": "2026-08-04T21:32:59Z"
 }
