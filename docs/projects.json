@@ -493,7 +493,7 @@
             ],
             "status": "Building",
             "category": "Web/Web3",
-            "liveDemo": "https://midkey-midnight.vercel.app",
+            "liveDemo": "https://midkey-midnight.vercel.app/",
             "image": "./assets/Project_icons/midkey.png",
             "theme": {
                 "primary": "#3B82F6",
@@ -501,5 +501,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T22:51:52Z"
+    "lastUpdated": "2026-08-04T22:56:51Z"
 }
