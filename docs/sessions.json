@@ -1,6 +1,27 @@
 {
     "projects": [
         {
+            "name": "Copilot Hands-On Session",
+            "description": "Hands-on training to explore GitHub Copilot’s agentic mode and Copilot CLI — prompt templates, workshop decks, and sample apps like a health club site and restaurant menu.",
+            "url": "https://github.com/Shakiran-Nannyombi/Copilot-Hands-On-Session",
+            "tags": [
+                "Session",
+                "Tutorial",
+                "GitHub Copilot",
+                "CLI",
+                "Agentic AI",
+                "Workshop"
+            ],
+            "status": "Done",
+            "category": "Sessions/Tutorials",
+            "liveDemo": "https://copilot-hands-on-session.vercel.app",
+            "image": "./assets/Project_icons/copilothands.png",
+            "theme": {
+                "primary": "#8B5CF6",
+                "background": "#1E0B3C"
+            }
+        },
+        {
             "name": "Alias Board",
             "description": "AIFest session build: claim a URL alias, collect LinkedIn and X post links under one public profile, and manage them with a one-time edit secret. Built with Next.js, SQLite, and Drizzle.",
             "url": "https://github.com/Shakiran-Nannyombi/AifestCursor",
@@ -22,6 +43,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T20:45:00Z"
+    "lastUpdated": "2026-08-04T20:58:12Z"
 }
-
