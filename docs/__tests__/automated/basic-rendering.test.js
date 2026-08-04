@@ -43,7 +43,7 @@ describe('Basic Rendering Tests', () => {
         expect(content).toContain('<!DOCTYPE html>');
         expect(content).toContain('<html lang="en">');
         expect(content).toContain('viewport');
-        expect(content).toContain('Context Engineering Projects');
+        expect(content).toContain('AI-Powered Projects by Shakiran');
         expect(content).toContain('project-grid');
         expect(content.includes('app.js') || content.includes('app.min.js')).toBe(true);
         expect(content.includes('styles.css') || content.includes('styles.min.css')).toBe(true);
@@ -53,7 +53,7 @@ describe('Basic Rendering Tests', () => {
         const indexPath = path.join(docsDir, 'index.html');
         const content = fs.readFileSync(indexPath, 'utf-8');
 
-        expect(content).toContain('<h1>Context Engineering Projects</h1>');
+        expect(content).toContain('<h1>AI-Powered Projects by Shakiran</h1>');
     });
 
     test('index.html footer contains repository link', () => {

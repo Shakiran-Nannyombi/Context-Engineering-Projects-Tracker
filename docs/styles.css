@@ -201,6 +201,29 @@ header {
 
 /* The CLI Icon block was removed */
 
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.brand-logo {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Theme-adaptive logo display */
+body.dark-theme .light-only {
+    display: none !important;
+}
+
+body:not(.dark-theme) .dark-only {
+    display: none !important;
+}
+
 .header-titles {
     display: flex;
     flex-direction: column;
@@ -238,6 +261,13 @@ header h1 {
         align-items: flex-start;
         gap: 1rem;
         padding: 1rem 1.25rem;
+    }
+    
+    .header-brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        width: 100%;
     }
     
     .header-titles {

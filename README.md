@@ -2,7 +2,11 @@
 
 <h1 align="center">AI-Powered Projects by Shakiran 💜</h1>
  <p align="center">
-   <img src="assets/devK.png" alt="Shakiran's profile" width="160" />
+   <picture>
+     <source media="(prefers-color-scheme: dark)" srcset="assets/devkiran256-logo-dark.svg">
+     <source media="(prefers-color-scheme: light)" srcset="assets/devkiran256-logo-light.png">
+     <img alt="DevKiran 256 Logo" src="assets/devkiran256-logo-light.png" width="320">
+   </picture>
  </p>
 
 <p align="center">
