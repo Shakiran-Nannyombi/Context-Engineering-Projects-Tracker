@@ -1,0 +1,27 @@
+{
+    "projects": [
+        {
+            "name": "Alias Board",
+            "description": "AIFest session build: claim a URL alias, collect LinkedIn and X post links under one public profile, and manage them with a one-time edit secret. Built with Next.js, SQLite, and Drizzle.",
+            "url": "https://github.com/Shakiran-Nannyombi/AifestCursor",
+            "tags": [
+                "Session",
+                "Tutorial",
+                "Next.js",
+                "SQLite",
+                "Drizzle",
+                "Networking"
+            ],
+            "status": "Building",
+            "category": "Sessions/Tutorials",
+            "liveDemo": "https://shakiran-nannyombi.github.io/AifestCursor/",
+            "image": "./assets/Project_icons/aliasboard.svg",
+            "theme": {
+                "primary": "#2EE6A6",
+                "background": "#0A0A0A"
+            }
+        }
+    ],
+    "lastUpdated": "2026-08-04T20:35:00Z"
+}
+

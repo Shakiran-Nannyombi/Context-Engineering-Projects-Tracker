@@ -5,6 +5,7 @@
 
 let currentProjects = [];
 let currentMCPs = [];
+let currentSessions = [];
 let activeTab = 'tab-projects';
 
 /**
@@ -107,6 +108,42 @@ async function loadMCPs() {
 
     } catch (error) {
         console.error('Failed to load MCPs:', error);
+        return { projects: [] };
+    }
+}
+
+
+/**
+ * Loads session/tutorial entries from sessions.json
+ * @returns {Promise<Object>} - Data object with projects array
+ */
+async function loadSessions() {
+    try {
+        const response = await fetch('sessions.json');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!data || typeof data !== 'object') {
+            throw new Error('Invalid data format: expected object');
+        }
+
+        if (!Array.isArray(data.projects)) {
+            throw new Error('Invalid data format: projects must be an array');
+        }
+
+        const validProjects = data.projects.filter(validateProject);
+
+        return {
+            projects: validProjects,
+            lastUpdated: data.lastUpdated
+        };
+
+    } catch (error) {
+        console.error('Failed to load sessions:', error);
         return { projects: [] };
     }
 }
@@ -479,13 +516,15 @@ async function initShowroom() {
         initTabs();
 
         // Load project data
-        const [projectsData, mcpsData] = await Promise.all([
+        const [projectsData, mcpsData, sessionsData] = await Promise.all([
             loadProjects(),
-            loadMCPs()
+            loadMCPs(),
+            loadSessions()
         ]);
 
         currentProjects = projectsData.projects || [];
         currentMCPs = mcpsData.projects || [];
+        currentSessions = sessionsData.projects || [];
 
         // Initial Render
         if (activeTab === 'tab-projects') {
@@ -494,12 +533,20 @@ async function initShowroom() {
             } else {
                 displayErrorMessage('No projects available to display.');
             }
-        } else {
+        } else if (activeTab === 'tab-mcp') {
             if (currentMCPs.length > 0) {
                 renderAllProjects(currentMCPs);
             } else {
                 renderMCPShowcase();
             }
+        } else if (activeTab === 'tab-sessions') {
+            if (currentSessions.length > 0) {
+                renderAllProjects(currentSessions);
+            } else {
+                renderSessionsShowcase();
+            }
+        } else if (activeTab === 'tab-papers') {
+            renderPapersShowcase();
         }
 
         // Initialize Lucide icons
@@ -561,6 +608,12 @@ function handleTabSwitch(tabId) {
         }
     } else if (tabId === 'tab-papers') {
         renderPapersShowcase();
+    } else if (tabId === 'tab-sessions') {
+        if (currentSessions.length > 0) {
+            renderAllProjects(currentSessions);
+        } else {
+            renderSessionsShowcase();
+        }
     }
 
     // Refresh icons for new content
@@ -601,6 +654,25 @@ function renderPapersShowcase() {
         <i data-lucide="newspaper"></i>
         <h2>Papers & Articles</h2>
         <p>Research notes, technical write-ups, and articles on AI, context engineering, and building real-world systems.</p>
+        <p style="margin-top: 1rem; font-weight: 600; color: var(--color-accent-blue);">Coming Soon</p>
+    `;
+
+    container.appendChild(placeholder);
+}
+
+/**
+ * Renders the Sessions & Tutorials placeholder
+ */
+function renderSessionsShowcase() {
+    const container = document.getElementById('project-grid');
+    if (!container) return;
+
+    const placeholder = document.createElement('div');
+    placeholder.className = 'mcp-placeholder';
+    placeholder.innerHTML = `
+        <i data-lucide="graduation-cap"></i>
+        <h2>Sessions & Tutorials</h2>
+        <p>Workshop builds, live coding sessions, and guided tutorials from AIFest and beyond.</p>
         <p style="margin-top: 1rem; font-weight: 600; color: var(--color-accent-blue);">Coming Soon</p>
     `;
 

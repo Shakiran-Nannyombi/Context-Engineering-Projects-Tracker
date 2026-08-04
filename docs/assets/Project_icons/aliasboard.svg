@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aliasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5CFFC7"/>
+      <stop offset="100%" stop-color="#1FAE79"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="42" fill="#0A0A0A"/>
+  <!-- Linked profile nodes -->
+  <circle cx="64" cy="70" r="18" fill="none" stroke="url(#aliasGrad)" stroke-width="6"/>
+  <circle cx="136" cy="70" r="18" fill="none" stroke="#F7F7F7" stroke-width="6"/>
+  <circle cx="100" cy="138" r="18" fill="none" stroke="url(#aliasGrad)" stroke-width="6"/>
+  <path d="M80 78 L120 78" stroke="#F7F7F7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M74 86 L92 124" stroke="url(#aliasGrad)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M126 86 L108 124" stroke="#F7F7F7" stroke-width="5" stroke-linecap="round"/>
+</svg>
