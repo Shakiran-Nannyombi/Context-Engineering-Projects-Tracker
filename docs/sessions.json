@@ -1,6 +1,28 @@
 {
     "projects": [
         {
+            "name": "Twogele Boda",
+            "description": "Gemma 4 multimodal assistant for Kampala boda riders \u2014 one chat for road-safety incident triage and livelihood bookkeeping, in English, Luganda, or street slang (text or audio).",
+            "url": "https://github.com/Tashbme005/Twogele-Boda",
+            "tags": [
+                "Session",
+                "Tutorial",
+                "Gemma",
+                "Hackathon",
+                "FastAPI",
+                "Mobility",
+                "Multimodal"
+            ],
+            "status": "Done",
+            "category": "Sessions/Tutorials",
+            "liveDemo": "https://twogele-boda.vercel.app",
+            "image": "./assets/Project_icons/twogeleboda.png",
+            "theme": {
+                "primary": "#68B0F8",
+                "background": "#0B1A36"
+            }
+        },
+        {
             "name": "Maps Workshop \u2014 AirQo x GDG",
             "description": "Hands-on Google Maps JavaScript API workshop (AirQo x GDG Makerere): map basics, marker clustering, heatmaps, Places autocomplete, and GeoJSON overlays for visualizing pollution across Kampala.",
             "url": "https://github.com/GDGoC-MUK/maps-workshop",
@@ -107,5 +129,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T22:21:22Z"
+    "lastUpdated": "2026-08-04T23:12:27Z"
 }

@@ -1,6 +1,29 @@
 {
     "projects": [
         {
+            "name": "Londoolink AI",
+            "description": "Multi-agent digital twin with persistent memory that acts across Gmail, Google Calendar, and Notion \u2014 credentials stay in Auth0 Token Vault. Built for the Auth0 AI Agents Hackathon with FastAPI, Next.js, LangGraph, and Gemini.",
+            "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
+            "tags": [
+                "Web",
+                "AI",
+                "Next.js",
+                "FastAPI",
+                "LangGraph",
+                "Auth0",
+                "Gemini",
+                "Hackathon"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://londoolink-ai.vercel.app/",
+            "image": "./assets/Project_icons/loondolinkAI.png",
+            "theme": {
+                "primary": "#6366F1",
+                "background": "#0F172A"
+            }
+        },
+        {
             "name": "Sokoni",
             "description": "Turns a phone and social feed into a marketplace \u2014 hosted product shops plus an auto-reply agent that closes sales when buyers comment a keyword. React dashboard with Cloudflare Workers API.",
             "url": "https://github.com/Shakiran-Nannyombi/Sokoni-Marketplace-",
@@ -120,11 +143,11 @@
                 "Gemini",
                 "Phoenix MCP",
                 "DPE",
-                "Cloud Run"
+                "Vercel"
             ],
             "status": "Done",
             "category": "Web/AI",
-            "liveDemo": "https://cenli-frontend-183690574774.europe-west2.run.app",
+            "liveDemo": "https://cenli.vercel.app/",
             "image": "./assets/Project_icons/cenli.png",
             "theme": {
                 "primary": "#00cca5",
@@ -308,29 +331,6 @@
             }
         },
         {
-            "name": "Londoolink AI",
-            "description": "Your Intelligent Digital Twin. A comprehensive AI-powered personal assistant that manages emails, calendars, and communications with a LangGraph multi-agent architecture.",
-            "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
-            "tags": [
-                "Web",
-                "AI",
-                "FastAPI",
-                "Next.js",
-                "LangGraph",
-                "OpenAI",
-                "PostgreSQL",
-                "Tailwind CSS"
-            ],
-            "status": "Done",
-            "category": "Web/AI",
-            "liveDemo": "https://londoolink-ai.vercel.app/",
-            "image": "./assets/Project_icons/loondolinkAI.png",
-            "theme": {
-                "primary": "#4fd1c5",
-                "background": "#0f1419"
-            }
-        },
-        {
             "name": "CommunitAI",
             "description": "An AI-powered Chief of Staff for community leaders. Automatically transcribes meetings, extracts action items, analyzes sentiment, and generates follow-up drafts.",
             "url": "https://github.com/Shakiran-Nannyombi/CommunitAI",
@@ -501,5 +501,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T22:56:51Z"
+    "lastUpdated": "2026-08-04T23:12:27Z"
 }
