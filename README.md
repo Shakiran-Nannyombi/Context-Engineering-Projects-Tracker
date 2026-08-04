@@ -27,9 +27,17 @@ This repository is my public **portfolio + project management hub** for all my c
 
 ## View My Projects
 
-**[→ Visit the Project Showroom](https://shakiran-nannyombi.github.io/Context-Engineering-Projects-Tracker/)**
+**[→ Visit the Project Showroom](https://www.shakiran.dev/aiprojects/)**
 
 Explore my completed projects in an interactive visual gallery with live demos and source code.
+
+The live showroom is served from the portfolio site at `/aiprojects/` (GitHub Pages). After editing this repo’s `docs/`, sync into the portfolio with:
+
+```bash
+./scripts/sync-aiprojects.sh
+```
+
+Then commit and push `Shakiran-myPortfolio` so the custom domain picks up the update. The old `shakiran.me` CNAME on this repo has been retired.
 
 ## Project Documentation
 
