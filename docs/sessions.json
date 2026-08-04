@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "Copilot Hands-On Session",
-            "description": "Hands-on training to explore GitHub Copilot’s agentic mode and Copilot CLI — prompt templates, workshop decks, and sample apps like a health club site and restaurant menu.",
+            "description": "Hands-on Copilot agentic + CLI workshop hub covering Health Club, Let's Eat, Blog Tracker, Event Management, QR App, Prompt Kit, and training decks — with a purple-themed tutorial and copyable Copilot prompt.",
             "url": "https://github.com/Shakiran-Nannyombi/Copilot-Hands-On-Session",
             "tags": [
                 "Session",
@@ -14,7 +14,7 @@
             ],
             "status": "Done",
             "category": "Sessions/Tutorials",
-            "liveDemo": "https://copilot-hands-on-session.vercel.app",
+            "liveDemo": "https://copilot-hands-on-session.vercel.app/",
             "image": "./assets/Project_icons/copilothands.png",
             "theme": {
                 "primary": "#8B5CF6",
@@ -43,5 +43,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T20:58:12Z"
+    "lastUpdated": "2026-08-04T21:15:00Z"
 }
