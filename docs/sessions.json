@@ -1,8 +1,30 @@
 {
     "projects": [
         {
+            "name": "FeedSense \u2014 Build with Gemma",
+            "description": "Gemma hackathon starter kit: a privacy-first social feed agent that moderates content, analyzes sentiment, and auto-categorizes posts via Google AI Studio \u2014 Streamlit dashboard plus isolated ai_agent.py brain.",
+            "url": "https://github.com/Shakiran-Nannyombi/feed-sense-app",
+            "tags": [
+                "Session",
+                "Tutorial",
+                "Gemma",
+                "Google AI Studio",
+                "Streamlit",
+                "Hackathon",
+                "Moderation"
+            ],
+            "status": "Done",
+            "category": "Sessions/Tutorials",
+            "liveDemo": "https://feed-sense.streamlit.app/",
+            "image": "./assets/Project_icons/feedsense.png",
+            "theme": {
+                "primary": "#3878E8",
+                "background": "#0B1A36"
+            }
+        },
+        {
             "name": "Copilot Hands-On Session",
-            "description": "Hands-on Copilot agentic + CLI workshop hub covering Health Club, Let's Eat, Blog Tracker, Event Management, QR App, Prompt Kit, and training decks — with a purple-themed tutorial and copyable Copilot prompt.",
+            "description": "Hands-on Copilot agentic + CLI workshop hub covering Health Club, Let's Eat, Blog Tracker, Event Management, QR App, Prompt Kit, and training decks \u2014 with a purple-themed tutorial and copyable Copilot prompt.",
             "url": "https://github.com/Shakiran-Nannyombi/Copilot-Hands-On-Session",
             "tags": [
                 "Session",
@@ -43,5 +65,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T21:15:00Z"
+    "lastUpdated": "2026-08-04T21:29:31Z"
 }
