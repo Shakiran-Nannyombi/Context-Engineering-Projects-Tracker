@@ -1,6 +1,48 @@
 {
     "projects": [
         {
+            "name": "Sokoni",
+            "description": "Turns a phone and social feed into a marketplace \u2014 hosted product shops plus an auto-reply agent that closes sales when buyers comment a keyword. React dashboard with Cloudflare Workers API.",
+            "url": "https://github.com/Shakiran-Nannyombi/Sokoni-Marketplace-",
+            "tags": [
+                "Web",
+                "React",
+                "Cloudflare Workers",
+                "Marketplace",
+                "Hono",
+                "D1"
+            ],
+            "status": "Done",
+            "category": "Web/Marketplace",
+            "liveDemo": "https://sokoni-marketplace.vercel.app",
+            "image": "./assets/Project_icons/sokoni.png",
+            "theme": {
+                "primary": "#F5820A",
+                "background": "#1E1B18"
+            }
+        },
+        {
+            "name": "MzeeChakula",
+            "description": "Voice-enabled nutrition chat assistant that estimates daily caloric needs and recommends local foods \u2014 Vue frontend plus FastAPI prediction API trained on food composition data.",
+            "url": "https://github.com/MzeeChakula/Model-Testing",
+            "tags": [
+                "Web",
+                "AI",
+                "Vue",
+                "FastAPI",
+                "Nutrition",
+                "Voice"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://mzeechakula.vercel.app/",
+            "image": "./assets/Project_icons/mzeechakula.png",
+            "theme": {
+                "primary": "#D80000",
+                "background": "#1A0A0A"
+            }
+        },
+        {
             "name": "Neusic",
             "description": "Mobile-first AI study companion that pairs Claude with auditory entrainment (binaural beats) to personalize focus sessions for African university students \u2014 music, science, and real-time adaptation in the browser.",
             "url": "https://github.com/Shakiran-Nannyombi/nuesic",
@@ -15,33 +57,11 @@
             ],
             "status": "Done",
             "category": "Web/AI",
-            "liveDemo": "https://nuesic.vercel.app",
+            "liveDemo": "https://nuesic-jet.vercel.app/",
             "image": "./assets/Project_icons/neusic.png",
             "theme": {
                 "primary": "#F8A018",
                 "background": "#202020"
-            }
-        },
-        {
-            "name": "MidKey",
-            "description": "Zero-knowledge identity platform on Midnight blockchain that replaces passwords with cryptographic proofs \u2014 prove facts about yourself without revealing the underlying data.",
-            "url": "https://github.com/shreya50/MidKey",
-            "tags": [
-                "Web",
-                "Web3",
-                "Zero-Knowledge",
-                "Midnight",
-                "Identity",
-                "Next.js",
-                "Keycloak"
-            ],
-            "status": "Building",
-            "category": "Web/Web3",
-            "liveDemo": "",
-            "image": "./assets/Project_icons/midkey.png",
-            "theme": {
-                "primary": "#3B82F6",
-                "background": "#0B1220"
             }
         },
         {
@@ -457,7 +477,29 @@
                 "primary": "#1e3a8a",
                 "background": "#0f172a"
             }
+        },
+        {
+            "name": "MidKey",
+            "description": "Zero-knowledge identity platform on Midnight blockchain that replaces passwords with cryptographic proofs \u2014 prove facts about yourself without revealing the underlying data.",
+            "url": "https://github.com/Shakiran-Nannyombi/MidKey-Midnight",
+            "tags": [
+                "Web",
+                "Web3",
+                "Zero-Knowledge",
+                "Midnight",
+                "Identity",
+                "Next.js",
+                "Keycloak"
+            ],
+            "status": "Building",
+            "category": "Web/Web3",
+            "liveDemo": "https://midkey-midnight.vercel.app",
+            "image": "./assets/Project_icons/midkey.png",
+            "theme": {
+                "primary": "#3B82F6",
+                "background": "#0B1220"
+            }
         }
     ],
-    "lastUpdated": "2026-08-04T22:38:21Z"
+    "lastUpdated": "2026-08-04T22:51:52Z"
 }
