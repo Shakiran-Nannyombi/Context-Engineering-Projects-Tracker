@@ -23,7 +23,7 @@ Hi! I'm **Shakiran Nannyombi** — building under the brand **@DevKiran256** acr
 
 This repository is my public **portfolio + project management hub** for all my context-engineered projects.
 
-> **Note:** I'm not a "vibe coder" — that's way too far-fetched 😂. I prefer to call it **context engineering** because let's be real, we're crafting prompts and contexts, not vibes!
+> **Note:** I'm not a "vibe coder" that's way too far-fetched 😂. I prefer to call it **context engineering** because let's be real, we're crafting prompts and contexts, not vibes!
 
 ## View My Projects
 
