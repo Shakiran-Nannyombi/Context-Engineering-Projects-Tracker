@@ -1,592 +1,592 @@
 {
-  "projects": [
-    {
-      "name": "Kasasiro Coin",
-      "description": "Gemma 4\u2013verified waste-to-rewards for Uganda \u2014 snap sorted rubbish, earn Kasasiro Coins for airtime/MoMo, with fraud checks and eco tips in Luganda, Swahili, and English.",
-      "url": "https://github.com/Shakiran-Nannyombi/Kasasiro-Coin",
-      "tags": [
-        "Web",
-        "AI",
-        "Gemma",
-        "Hackathon",
-        "Vite",
-        "Sustainability",
-        "FinTech"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://kasasiro-coin.vercel.app/",
-      "image": "./assets/Project_icons/kasasiro.png",
-      "theme": {
-        "primary": "#22C55E",
-        "background": "#0C281C"
-      }
-    },
-    {
-      "name": "Twogele Boda",
-      "description": "Gemma 4 multimodal assistant for Kampala boda riders \u2014 one chat for road-safety incident triage and livelihood bookkeeping, in English, Luganda, or street slang (text or audio).",
-      "url": "https://github.com/Tashbme005/Twogele-Boda",
-      "tags": [
-        "Web",
-        "AI",
-        "Gemma",
-        "Hackathon",
-        "FastAPI",
-        "Mobility",
-        "Multimodal"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://twogele-boda.vercel.app",
-      "image": "./assets/Project_icons/twogeleboda.png",
-      "theme": {
-        "primary": "#68B0F8",
-        "background": "#0B1A36"
-      }
-    },
-    {
-      "name": "Londoolink AI",
-      "description": "Multi-agent digital twin with persistent memory that acts across Gmail, Google Calendar, and Notion \u2014 credentials stay in Auth0 Token Vault. Built for the Auth0 AI Agents Hackathon with FastAPI, Next.js, LangGraph, and Gemini.",
-      "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
-      "tags": [
-        "Web",
-        "AI",
-        "Next.js",
-        "FastAPI",
-        "LangGraph",
-        "Auth0",
-        "Gemini",
-        "Hackathon"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://londoolink-ai.vercel.app/",
-      "image": "./assets/Project_icons/loondolinkAI.png",
-      "theme": {
-        "primary": "#6366F1",
-        "background": "#0F172A"
-      }
-    },
-    {
-      "name": "Sokoni",
-      "description": "Turns a phone and social feed into a marketplace \u2014 hosted product shops plus an auto-reply agent that closes sales when buyers comment a keyword. React dashboard with Cloudflare Workers API.",
-      "url": "https://github.com/Shakiran-Nannyombi/Sokoni-Marketplace-",
-      "tags": [
-        "Web",
-        "React",
-        "Cloudflare Workers",
-        "Marketplace",
-        "Hono",
-        "D1"
-      ],
-      "status": "Done",
-      "category": "Web/Marketplace",
-      "liveDemo": "https://sokoni-marketplace.vercel.app",
-      "image": "./assets/Project_icons/sokoni.png",
-      "theme": {
-        "primary": "#F5820A",
-        "background": "#1E1B18"
-      }
-    },
-    {
-      "name": "MzeeChakula",
-      "description": "Voice-enabled nutrition chat assistant that estimates daily caloric needs and recommends local foods \u2014 Vue frontend plus FastAPI prediction API trained on food composition data.",
-      "url": "https://github.com/MzeeChakula/Model-Testing",
-      "tags": [
-        "Web",
-        "AI",
-        "Vue",
-        "FastAPI",
-        "Nutrition",
-        "Voice"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://mzeechakula.vercel.app/",
-      "image": "./assets/Project_icons/mzeechakula.png",
-      "theme": {
-        "primary": "#D80000",
-        "background": "#1A0A0A"
-      }
-    },
-    {
-      "name": "Neusic",
-      "description": "Mobile-first AI study companion that pairs Claude with auditory entrainment (binaural beats) to personalize focus sessions for African university students \u2014 music, science, and real-time adaptation in the browser.",
-      "url": "https://github.com/Shakiran-Nannyombi/nuesic",
-      "tags": [
-        "Web",
-        "AI",
-        "FastAPI",
-        "Claude",
-        "EdTech",
-        "Wellness",
-        "Vite"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://nuesic-jet.vercel.app/",
-      "image": "./assets/Project_icons/neusic.png",
-      "theme": {
-        "primary": "#F8A018",
-        "background": "#202020"
-      }
-    },
-    {
-      "name": "Kazi Skills",
-      "description": "Landing site for Kazi Skills \u2014 an AI-powered mobile-first skills marketplace helping African youth learn practical skills and earn from their phones. Built with Next.js 16, TypeScript, and Tailwind.",
-      "url": "https://github.com/Kazi-Skills/kazi-skills-website",
-      "tags": [
-        "Web",
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "EdTech",
-        "Landing"
-      ],
-      "status": "Done",
-      "category": "Web/EdTech",
-      "liveDemo": "https://kazi-skills-website.vercel.app/",
-      "image": "./assets/Project_icons/kaziskills.png",
-      "theme": {
-        "primary": "#AB43D0",
-        "background": "#1A0A24"
-      }
-    },
-    {
-      "name": "OpenImpact",
-      "description": "Charity receipts you can follow \u2014 donor to organisation to recipient with proof of use, privacy-preserving briefs, and a server-side trust score. Built by Team HackonChain with Vite/React, Supabase, and a Web3 settlement stub.",
-      "url": "https://github.com/Tashbme005/HackonChain",
-      "tags": [
-        "Web",
-        "Web3",
-        "React",
-        "Vite",
-        "Supabase",
-        "TanStack Router",
-        "Charity",
-        "Hackathon"
-      ],
-      "status": "Done",
-      "category": "Web/Web3",
-      "liveDemo": "https://open-impact.vercel.app/",
-      "image": "./assets/Project_icons/openimpact.png",
-      "theme": {
-        "primary": "#1E8F6F",
-        "background": "#12333B"
-      }
-    },
-    {
-      "name": "Cenli \u2014 Dev Clarifier AI",
-      "description": "An autonomous Developer Productivity Engineering (DPE) guardrail agent that intercepts, refactors, and gates AI-generated code before it hits main \u2014 with Phoenix MCP self-introspection, LLM-as-a-Judge auditing, and a real-time React dashboard.",
-      "url": "https://github.com/Shakiran-Nannyombi/Cenli",
-      "tags": [
-        "Web",
-        "AI",
-        "FastAPI",
-        "React",
-        "Gemini",
-        "Phoenix MCP",
-        "DPE",
-        "Vercel"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://cenli.vercel.app/",
-      "image": "./assets/Project_icons/cenli.png",
-      "theme": {
-        "primary": "#00cca5",
-        "background": "#001020"
-      }
-    },
-    {
-      "name": "Anime-Themed Portfolio",
-      "description": "A modern single-page portfolio template blending clean tech UI with vibrant anime-inspired design. Built through a Stitch \u2192 Figma \u2192 Antigravity MCP pipeline with cel-shaded character art across every section.",
-      "url": "https://github.com/Shakiran-Nannyombi/Anime-themed-Portfolio",
-      "tags": [
-        "Web",
-        "React",
-        "Vite",
-        "UI/UX",
-        "Anime",
-        "Figma",
-        "MCP"
-      ],
-      "status": "Done",
-      "category": "Web/Design",
-      "liveDemo": "https://anime-themed-portfolio.vercel.app",
-      "image": "./assets/Project_icons/animeportfolio.png",
-      "theme": {
-        "primary": "#ef1570",
-        "background": "#130109"
-      }
-    },
-    {
-      "name": "FlowDay",
-      "description": "A calm accountability partner that plans with your procrastination patterns, not against them. Features a time-block timeline, gentle nudges, and adapts when you slip \u2014 built for over-planners and under-doers.",
-      "url": "https://github.com/Shakiran-Nannyombi/v0-flowday-planner-agent",
-      "tags": [
-        "Web",
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Radix UI",
-        "Productivity"
-      ],
-      "status": "Done",
-      "category": "Web/Productivity",
-      "liveDemo": "https://v0-flowday.vercel.app",
-      "image": "./assets/Project_icons/flowday.png",
-      "theme": {
-        "primary": "#3b82f6",
-        "background": "#0f172a"
-      }
-    },
-    {
-      "name": "CrownCheck AI",
-      "description": "AI-powered haircare intelligence platform with live AR hairstyle try-on. Features real-time MediaPipe hair segmentation, 478-point face landmark tracking, canvas-drawn hairstyle and makeup filters, a curated lookbook, and a consultant marketplace \u2014 all built with React, TypeScript, and Tailwind CSS.",
-      "url": "https://github.com/Shakiran-Nannyombi/CrownChecker-AI",
-      "tags": [
-        "Web",
-        "AI",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "MediaPipe",
-        "AR",
-        "Vite"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://crown-checker-ai.vercel.app/",
-      "image": "./assets/Project_icons/crownchecker.svg",
-      "theme": {
-        "primary": "#f4b3db",
-        "background": "#1c1018"
-      }
-    },
-    {
-      "name": "Komorembi",
-      "description": "A full-stack AI chat agent with RAG capabilities, LINE messaging integration, and an admin dashboard. Features bilingual support (English & Japanese), live stats, chat logs, and a knowledge base manager.",
-      "url": "https://github.com/Shakiran-Nannyombi/Chat-rag-Agent-MVP",
-      "tags": [
-        "Web",
-        "AI",
-        "React",
-        "FastAPI",
-        "LangChain",
-        "Pinecone",
-        "Groq",
-        "MongoDB",
-        "LINE"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://komorebi-sigma.vercel.app/",
-      "image": "./assets/Project_icons/komorembi.png",
-      "theme": {
-        "primary": "#a78bfa",
-        "background": "#1e1b4b"
-      }
-    },
-    {
-      "name": "Finui",
-      "description": "A financial inclusion app for informal workers \u2014 market vendors, boda boda riders, and tailors. Uses alternative data to build a verifiable Trust Score, unlocking micro-savings and credit tiers without formal pay slips.",
-      "url": "https://github.com/Shakiran-Nannyombi/finui",
-      "tags": [
-        "Web",
-        "AI",
-        "React",
-        "Tailwind CSS",
-        "Node.js",
-        "Express",
-        "FinTech"
-      ],
-      "status": "Done",
-      "category": "Web/FinTech",
-      "liveDemo": "https://finui.vercel.app/",
-      "image": "./assets/Project_icons/finui.svg",
-      "theme": {
-        "primary": "#10B981",
-        "background": "#0f172a"
-      }
-    },
-    {
-      "name": "Artisan Pizza AI",
-      "description": "A premium, AI-driven platform that combines traditional wood-fired pizza excellence with an intelligent AI Taste Assistant. Features a high-performance frontend and a specialized Streamlit AI Dashboard (https://pizza-customerservice-agent.streamlit.app/).",
-      "url": "https://github.com/Shakiran-Nannyombi/Pizza-CustomerService-Agent",
-      "tags": [
-        "Web",
-        "AI",
-        "FastAPI",
-        "Streamlit",
-        "LLaMA 3.1",
-        "Python",
-        "Lucide"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://pizza-customer-service-agent.vercel.app/",
-      "image": "./assets/Project_icons/pizzaagent.svg",
-      "theme": {
-        "primary": "#FF6B35",
-        "background": "#2D1B14"
-      }
-    },
-    {
-      "name": "Kylax Bank",
-      "description": "A next-generation AI-native banking platform featuring animated glassmorphism UI, real-time application tracking, and AI-driven credit assessment visualizations.",
-      "url": "https://github.com/Shakiran-Nannyombi/kylaxBank",
-      "tags": [
-        "Web",
-        "AI",
-        "React",
-        "Tailwind CSS",
-        "Express.js",
-        "WebSocket"
-      ],
-      "status": "Done",
-      "category": "Web/FinTech",
-      "liveDemo": "https://kylax-bank.vercel.app/",
-      "image": "./assets/Project_icons/kylaxbank.png",
-      "theme": {
-        "primary": "#667eea",
-        "background": "#1a202c"
-      }
-    },
-    {
-      "name": "SonoQuip",
-      "description": "An interactive PWA for sonography learning and verification. Features curated quizzes, role-based dashboards, and QR-based credential verification.",
-      "url": "https://github.com/Shakiran-Nannyombi/SonoQuip",
-      "tags": [
-        "Web",
-        "PWA",
-        "Vue 3",
-        "Vite",
-        "TypeScript",
-        "Tailwind CSS"
-      ],
-      "status": "Done",
-      "category": "Web/PWA",
-      "liveDemo": "https://sono-quip.vercel.app/",
-      "image": "./assets/Project_icons/sonoquip.svg",
-      "theme": {
-        "primary": "#47c9db",
-        "background": "#083839"
-      }
-    },
-    {
-      "name": "CommunitAI",
-      "description": "An AI-powered Chief of Staff for community leaders. Automatically transcribes meetings, extracts action items, analyzes sentiment, and generates follow-up drafts.",
-      "url": "https://github.com/Shakiran-Nannyombi/CommunitAI",
-      "tags": [
-        "Web",
-        "AI",
-        "Next.js",
-        "FastAPI",
-        "DigitalOcean",
-        "Gradient AI",
-        "Groq",
-        "PostgreSQL"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://communit-ai.vercel.app",
-      "image": "./assets/Project_icons/communitAI.svg",
-      "theme": {
-        "primary": "#064e3b",
-        "background": "#57c801"
-      }
-    },
-    {
-      "name": "Cortex",
-      "description": "A cloud-agnostic document processing platform (upload \u2192 OCR \u2192 search \u2192 organize). Built with React, Flask, PostgreSQL, and Docker.",
-      "url": "https://github.com/Shakiran-Nannyombi/Cortex",
-      "tags": [
-        "Web",
-        "AI",
-        "Flask",
-        "React",
-        "PostgreSQL",
-        "Docker",
-        "OCR"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://www.cortexug.duckdns.org/",
-      "image": "./assets/Project_icons/cortex.svg",
-      "theme": {
-        "primary": "#00d2ff",
-        "background": "#0154C8"
-      }
-    },
-    {
-      "name": "Text2Reel: AI Cinematic Storyboarder",
-      "description": "A high-fidelity platform designed for the intelligent generation of cinematic video scenes from natural language prompts. Enables creators to transform concepts into frame-perfect storyboards.",
-      "url": "https://github.com/Shakiran-Nannyombi/Text2Reel",
-      "tags": [
-        "Web",
-        "AI",
-        "Next.js",
-        "Remotion",
-        "Groq"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://text2-reel.vercel.app/",
-      "image": "./assets/Project_icons/Text2reel.png",
-      "theme": {
-        "primary": "#f79878",
-        "background": "#4A281C"
-      }
-    },
-    {
-      "name": "Component Garden: The Living UI Sanctuary",
-      "description": "A premium, standalone design ecosystem where high-fidelity interface elements are nurtured from pure code into flourishing digital experiences.",
-      "url": "https://github.com/Shakiran-Nannyombi/ComponentGarden",
-      "tags": [
-        "Web",
-        "React",
-        "Next.js",
-        "MUI",
-        "Framer Motion",
-        "Tailwind CSS"
-      ],
-      "status": "Done",
-      "category": "Web/Design",
-      "liveDemo": "https://component-garden.vercel.app/",
-      "image": "./assets/Project_icons/componentgarden.png",
-      "theme": {
-        "primary": "#ab00ff",
-        "background": "#31004a"
-      }
-    },
-    {
-      "name": "Recipe Finder",
-      "description": "An intelligent recipe discovery app that helps you find delicious meals based on ingredients you have. Powered by AI for smart recommendations.",
-      "url": "https://github.com/Shakiran-Nannyombi/recipe-finder",
-      "tags": [
-        "Web",
-        "AI",
-        "Python",
-        "API",
-        "Kiro"
-      ],
-      "status": "Building",
-      "category": "Web/AI",
-      "liveDemo": "https://recipeaiug.vercel.app/",
-      "image": "./assets/Project_icons/RecipeAI.png",
-      "theme": {
-        "primary": "#FFD059",
-        "background": "#B13D03"
-      }
-    },
-    {
-      "name": "UI Garden: The Sentient Design Arcade",
-      "description": "A gamified design playground with Gemini AI integration. Built with React, TypeScript, Vite, Framer Motion, and Gemini API.",
-      "url": "https://github.com/Shakiran-Nannyombi/ui-garden",
-      "tags": [
-        "Web",
-        "AI",
-        "React",
-        "TypeScript",
-        "Gemini",
-        "Google AI Studio"
-      ],
-      "status": "Done",
-      "category": "Web/AI",
-      "liveDemo": "https://ui-garden-orcin.vercel.app/",
-      "image": "./assets/Project_icons/uigarden.png",
-      "theme": {
-        "primary": "#7ED6D7",
-        "background": "#025E5C"
-      }
-    },
-    {
-      "name": "X Growth Bot",
-      "description": "Flask web app that generates and schedules developer-focused X (Twitter) content \u2014 templates, timing reminders, content library, and a simple analytics dashboard.",
-      "url": "https://github.com/Shakiran-Nannyombi/X-bot",
-      "tags": [
-        "Web",
-        "Flask",
-        "Python",
-        "Tailwind CSS",
-        "Content",
-        "Twitter/X"
-      ],
-      "status": "Building",
-      "category": "Web/Productivity",
-      "liveDemo": "https://x-bot-whlp.onrender.com",
-      "image": "./assets/Project_icons/xbot.png",
-      "theme": {
-        "primary": "#38BDF8",
-        "background": "#0F172A"
-      }
-    },
-    {
-      "name": "Lysi Properties",
-      "description": "Django property management system with an admin panel, tenant portal, and public-facing site for listings, leases, maintenance requests, and documents.",
-      "url": "https://github.com/Shakiran-Nannyombi/Lysi-properties",
-      "tags": [
-        "Web",
-        "Django",
-        "Python",
-        "Property Management",
-        "Tailwind CSS",
-        "SQLite"
-      ],
-      "status": "Building",
-      "category": "Web/Property",
-      "liveDemo": "https://lysi-properties.onrender.com",
-      "image": "./assets/Project_icons/lysiproperties.png",
-      "theme": {
-        "primary": "#1e3a8a",
-        "background": "#0f172a"
-      }
-    },
-    {
-      "name": "MidKey",
-      "description": "Zero-knowledge identity platform on Midnight blockchain that replaces passwords with cryptographic proofs \u2014 prove facts about yourself without revealing the underlying data.",
-      "url": "https://github.com/Shakiran-Nannyombi/MidKey-Midnight",
-      "tags": [
-        "Web",
-        "Web3",
-        "Zero-Knowledge",
-        "Midnight",
-        "Identity",
-        "Next.js",
-        "Keycloak"
-      ],
-      "status": "Building",
-      "category": "Web/Web3",
-      "liveDemo": "https://midkey-midnight.vercel.app/",
-      "image": "./assets/Project_icons/midkey.png",
-      "theme": {
-        "primary": "#3B82F6",
-        "background": "#0B1220"
-      }
-    },
-    {
-      "name": "Tabula",
-      "description": "Premium React banking interface for sovereign portfolio management \u2014 real-time telemetry, tonal high-contrast UI, and Gemini-assisted intelligence on Vite + Tailwind.",
-      "url": "https://github.com/Shakiran-Nannyombi/Tabula-Banking-System",
-      "tags": [
-        "Web",
-        "React",
-        "Vite",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Gemini",
-        "FinTech"
-      ],
-      "status": "Building",
-      "category": "Web/FinTech",
-      "liveDemo": "https://tabula-banking-system.vercel.app/",
-      "image": "./assets/Project_icons/tabula.png",
-      "theme": {
-        "primary": "#646CFF",
-        "background": "#0A0C14"
-      }
-    }
-  ],
-  "lastUpdated": "2026-08-04T23:32:33Z"
+    "projects": [
+        {
+            "name": "Kasasiro Coin",
+            "description": "Gemma 4\u2013verified waste-to-rewards for Uganda \u2014 snap sorted rubbish, earn Kasasiro Coins for airtime/MoMo, with fraud checks and eco tips in Luganda, Swahili, and English.",
+            "url": "https://github.com/Shakiran-Nannyombi/Kasasiro-Coin",
+            "tags": [
+                "Web",
+                "AI",
+                "Gemma",
+                "Hackathon",
+                "Vite",
+                "Sustainability",
+                "FinTech"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://kasasiro-coin.vercel.app/",
+            "image": "./assets/Project_icons/kasasiro.png",
+            "theme": {
+                "primary": "#22C55E",
+                "background": "#0C281C"
+            }
+        },
+        {
+            "name": "Twogele Boda",
+            "description": "Gemma 4 multimodal assistant for Kampala boda riders \u2014 one chat for road-safety incident triage and livelihood bookkeeping, in English, Luganda, or street slang (text or audio).",
+            "url": "https://github.com/Tashbme005/Twogele-Boda",
+            "tags": [
+                "Web",
+                "AI",
+                "Gemma",
+                "Hackathon",
+                "FastAPI",
+                "Mobility",
+                "Multimodal"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://twogele-boda.vercel.app",
+            "image": "./assets/Project_icons/twogeleboda.svg",
+            "theme": {
+                "primary": "#f59e0b",
+                "background": "#fcf9f2"
+            }
+        },
+        {
+            "name": "Londoolink AI",
+            "description": "Multi-agent digital twin with persistent memory that acts across Gmail, Google Calendar, and Notion \u2014 credentials stay in Auth0 Token Vault. Built for the Auth0 AI Agents Hackathon with FastAPI, Next.js, LangGraph, and Gemini.",
+            "url": "https://github.com/Shakiran-Nannyombi/Londoolink-AI",
+            "tags": [
+                "Web",
+                "AI",
+                "Next.js",
+                "FastAPI",
+                "LangGraph",
+                "Auth0",
+                "Gemini",
+                "Hackathon"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://londoolink-ai.vercel.app/",
+            "image": "./assets/Project_icons/loondolinkAI.png",
+            "theme": {
+                "primary": "#6366F1",
+                "background": "#0F172A"
+            }
+        },
+        {
+            "name": "Sokoni",
+            "description": "Turns a phone and social feed into a marketplace \u2014 hosted product shops plus an auto-reply agent that closes sales when buyers comment a keyword. React dashboard with Cloudflare Workers API.",
+            "url": "https://github.com/Shakiran-Nannyombi/Sokoni-Marketplace-",
+            "tags": [
+                "Web",
+                "React",
+                "Cloudflare Workers",
+                "Marketplace",
+                "Hono",
+                "D1"
+            ],
+            "status": "Done",
+            "category": "Web/Marketplace",
+            "liveDemo": "https://sokoni-marketplace.vercel.app",
+            "image": "./assets/Project_icons/sokoni.png",
+            "theme": {
+                "primary": "#F5820A",
+                "background": "#1E1B18"
+            }
+        },
+        {
+            "name": "MzeeChakula",
+            "description": "Voice-enabled nutrition chat assistant that estimates daily caloric needs and recommends local foods \u2014 Vue frontend plus FastAPI prediction API trained on food composition data.",
+            "url": "https://github.com/MzeeChakula/Model-Testing",
+            "tags": [
+                "Web",
+                "AI",
+                "Vue",
+                "FastAPI",
+                "Nutrition",
+                "Voice"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://mzeechakula.vercel.app/",
+            "image": "./assets/Project_icons/mzeechakula.png",
+            "theme": {
+                "primary": "#D80000",
+                "background": "#1A0A0A"
+            }
+        },
+        {
+            "name": "Neusic",
+            "description": "Mobile-first AI study companion that pairs Claude with auditory entrainment (binaural beats) to personalize focus sessions for African university students \u2014 music, science, and real-time adaptation in the browser.",
+            "url": "https://github.com/Shakiran-Nannyombi/nuesic",
+            "tags": [
+                "Web",
+                "AI",
+                "FastAPI",
+                "Claude",
+                "EdTech",
+                "Wellness",
+                "Vite"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://nuesic-jet.vercel.app/",
+            "image": "./assets/Project_icons/neusic.png",
+            "theme": {
+                "primary": "#F8A018",
+                "background": "#202020"
+            }
+        },
+        {
+            "name": "Kazi Skills",
+            "description": "Landing site for Kazi Skills \u2014 an AI-powered mobile-first skills marketplace helping African youth learn practical skills and earn from their phones. Built with Next.js 16, TypeScript, and Tailwind.",
+            "url": "https://github.com/Kazi-Skills/kazi-skills-website",
+            "tags": [
+                "Web",
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "EdTech",
+                "Landing"
+            ],
+            "status": "Done",
+            "category": "Web/EdTech",
+            "liveDemo": "https://kazi-skills-website.vercel.app/",
+            "image": "./assets/Project_icons/kaziskills.png",
+            "theme": {
+                "primary": "#AB43D0",
+                "background": "#1A0A24"
+            }
+        },
+        {
+            "name": "OpenImpact",
+            "description": "Charity receipts you can follow \u2014 donor to organisation to recipient with proof of use, privacy-preserving briefs, and a server-side trust score. Built by Team HackonChain with Vite/React, Supabase, and a Web3 settlement stub.",
+            "url": "https://github.com/Tashbme005/HackonChain",
+            "tags": [
+                "Web",
+                "Web3",
+                "React",
+                "Vite",
+                "Supabase",
+                "TanStack Router",
+                "Charity",
+                "Hackathon"
+            ],
+            "status": "Done",
+            "category": "Web/Web3",
+            "liveDemo": "https://open-impact.vercel.app/",
+            "image": "./assets/Project_icons/openimpact.png",
+            "theme": {
+                "primary": "#1E8F6F",
+                "background": "#12333B"
+            }
+        },
+        {
+            "name": "Cenli \u2014 Dev Clarifier AI",
+            "description": "An autonomous Developer Productivity Engineering (DPE) guardrail agent that intercepts, refactors, and gates AI-generated code before it hits main \u2014 with Phoenix MCP self-introspection, LLM-as-a-Judge auditing, and a real-time React dashboard.",
+            "url": "https://github.com/Shakiran-Nannyombi/Cenli",
+            "tags": [
+                "Web",
+                "AI",
+                "FastAPI",
+                "React",
+                "Gemini",
+                "Phoenix MCP",
+                "DPE",
+                "Vercel"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://cenli.vercel.app/",
+            "image": "./assets/Project_icons/cenli.png",
+            "theme": {
+                "primary": "#00cca5",
+                "background": "#001020"
+            }
+        },
+        {
+            "name": "Anime-Themed Portfolio",
+            "description": "A modern single-page portfolio template blending clean tech UI with vibrant anime-inspired design. Built through a Stitch \u2192 Figma \u2192 Antigravity MCP pipeline with cel-shaded character art across every section.",
+            "url": "https://github.com/Shakiran-Nannyombi/Anime-themed-Portfolio",
+            "tags": [
+                "Web",
+                "React",
+                "Vite",
+                "UI/UX",
+                "Anime",
+                "Figma",
+                "MCP"
+            ],
+            "status": "Done",
+            "category": "Web/Design",
+            "liveDemo": "https://anime-themed-portfolio.vercel.app",
+            "image": "./assets/Project_icons/animeportfolio.png",
+            "theme": {
+                "primary": "#ef1570",
+                "background": "#130109"
+            }
+        },
+        {
+            "name": "FlowDay",
+            "description": "A calm accountability partner that plans with your procrastination patterns, not against them. Features a time-block timeline, gentle nudges, and adapts when you slip \u2014 built for over-planners and under-doers.",
+            "url": "https://github.com/Shakiran-Nannyombi/v0-flowday-planner-agent",
+            "tags": [
+                "Web",
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "Radix UI",
+                "Productivity"
+            ],
+            "status": "Done",
+            "category": "Web/Productivity",
+            "liveDemo": "https://v0-flowday.vercel.app",
+            "image": "./assets/Project_icons/flowday.png",
+            "theme": {
+                "primary": "#3b82f6",
+                "background": "#0f172a"
+            }
+        },
+        {
+            "name": "CrownCheck AI",
+            "description": "AI-powered haircare intelligence platform with live AR hairstyle try-on. Features real-time MediaPipe hair segmentation, 478-point face landmark tracking, canvas-drawn hairstyle and makeup filters, a curated lookbook, and a consultant marketplace \u2014 all built with React, TypeScript, and Tailwind CSS.",
+            "url": "https://github.com/Shakiran-Nannyombi/CrownChecker-AI",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "MediaPipe",
+                "AR",
+                "Vite"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://crown-checker-ai.vercel.app/",
+            "image": "./assets/Project_icons/crownchecker.svg",
+            "theme": {
+                "primary": "#f4b3db",
+                "background": "#1c1018"
+            }
+        },
+        {
+            "name": "Komorembi",
+            "description": "A full-stack AI chat agent with RAG capabilities, LINE messaging integration, and an admin dashboard. Features bilingual support (English & Japanese), live stats, chat logs, and a knowledge base manager.",
+            "url": "https://github.com/Shakiran-Nannyombi/Chat-rag-Agent-MVP",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "FastAPI",
+                "LangChain",
+                "Pinecone",
+                "Groq",
+                "MongoDB",
+                "LINE"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://komorebi-sigma.vercel.app/",
+            "image": "./assets/Project_icons/komorembi.png",
+            "theme": {
+                "primary": "#a78bfa",
+                "background": "#1e1b4b"
+            }
+        },
+        {
+            "name": "Finui",
+            "description": "A financial inclusion app for informal workers \u2014 market vendors, boda boda riders, and tailors. Uses alternative data to build a verifiable Trust Score, unlocking micro-savings and credit tiers without formal pay slips.",
+            "url": "https://github.com/Shakiran-Nannyombi/finui",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "Tailwind CSS",
+                "Node.js",
+                "Express",
+                "FinTech"
+            ],
+            "status": "Done",
+            "category": "Web/FinTech",
+            "liveDemo": "https://finui.vercel.app/",
+            "image": "./assets/Project_icons/finui.svg",
+            "theme": {
+                "primary": "#10B981",
+                "background": "#0f172a"
+            }
+        },
+        {
+            "name": "Artisan Pizza AI",
+            "description": "A premium, AI-driven platform that combines traditional wood-fired pizza excellence with an intelligent AI Taste Assistant. Features a high-performance frontend and a specialized Streamlit AI Dashboard (https://pizza-customerservice-agent.streamlit.app/).",
+            "url": "https://github.com/Shakiran-Nannyombi/Pizza-CustomerService-Agent",
+            "tags": [
+                "Web",
+                "AI",
+                "FastAPI",
+                "Streamlit",
+                "LLaMA 3.1",
+                "Python",
+                "Lucide"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://pizza-customer-service-agent.vercel.app/",
+            "image": "./assets/Project_icons/pizzaagent.svg",
+            "theme": {
+                "primary": "#FF6B35",
+                "background": "#2D1B14"
+            }
+        },
+        {
+            "name": "Kylax Bank",
+            "description": "A next-generation AI-native banking platform featuring animated glassmorphism UI, real-time application tracking, and AI-driven credit assessment visualizations.",
+            "url": "https://github.com/Shakiran-Nannyombi/kylaxBank",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "Tailwind CSS",
+                "Express.js",
+                "WebSocket"
+            ],
+            "status": "Done",
+            "category": "Web/FinTech",
+            "liveDemo": "https://kylax-bank.vercel.app/",
+            "image": "./assets/Project_icons/kylaxbank.png",
+            "theme": {
+                "primary": "#667eea",
+                "background": "#1a202c"
+            }
+        },
+        {
+            "name": "SonoQuip",
+            "description": "An interactive PWA for sonography learning and verification. Features curated quizzes, role-based dashboards, and QR-based credential verification.",
+            "url": "https://github.com/Shakiran-Nannyombi/SonoQuip",
+            "tags": [
+                "Web",
+                "PWA",
+                "Vue 3",
+                "Vite",
+                "TypeScript",
+                "Tailwind CSS"
+            ],
+            "status": "Done",
+            "category": "Web/PWA",
+            "liveDemo": "https://sono-quip.vercel.app/",
+            "image": "./assets/Project_icons/sonoquip.svg",
+            "theme": {
+                "primary": "#47c9db",
+                "background": "#083839"
+            }
+        },
+        {
+            "name": "CommunitAI",
+            "description": "An AI-powered Chief of Staff for community leaders. Automatically transcribes meetings, extracts action items, analyzes sentiment, and generates follow-up drafts.",
+            "url": "https://github.com/Shakiran-Nannyombi/CommunitAI",
+            "tags": [
+                "Web",
+                "AI",
+                "Next.js",
+                "FastAPI",
+                "DigitalOcean",
+                "Gradient AI",
+                "Groq",
+                "PostgreSQL"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://communit-ai.vercel.app",
+            "image": "./assets/Project_icons/communitAI.svg",
+            "theme": {
+                "primary": "#064e3b",
+                "background": "#57c801"
+            }
+        },
+        {
+            "name": "Cortex",
+            "description": "A cloud-agnostic document processing platform (upload \u2192 OCR \u2192 search \u2192 organize). Built with React, Flask, PostgreSQL, and Docker.",
+            "url": "https://github.com/Shakiran-Nannyombi/Cortex",
+            "tags": [
+                "Web",
+                "AI",
+                "Flask",
+                "React",
+                "PostgreSQL",
+                "Docker",
+                "OCR"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://www.cortexug.duckdns.org/",
+            "image": "./assets/Project_icons/cortex.svg",
+            "theme": {
+                "primary": "#00d2ff",
+                "background": "#0154C8"
+            }
+        },
+        {
+            "name": "Text2Reel: AI Cinematic Storyboarder",
+            "description": "A high-fidelity platform designed for the intelligent generation of cinematic video scenes from natural language prompts. Enables creators to transform concepts into frame-perfect storyboards.",
+            "url": "https://github.com/Shakiran-Nannyombi/Text2Reel",
+            "tags": [
+                "Web",
+                "AI",
+                "Next.js",
+                "Remotion",
+                "Groq"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://text2-reel.vercel.app/",
+            "image": "./assets/Project_icons/Text2reel.png",
+            "theme": {
+                "primary": "#f79878",
+                "background": "#4A281C"
+            }
+        },
+        {
+            "name": "Component Garden: The Living UI Sanctuary",
+            "description": "A premium, standalone design ecosystem where high-fidelity interface elements are nurtured from pure code into flourishing digital experiences.",
+            "url": "https://github.com/Shakiran-Nannyombi/ComponentGarden",
+            "tags": [
+                "Web",
+                "React",
+                "Next.js",
+                "MUI",
+                "Framer Motion",
+                "Tailwind CSS"
+            ],
+            "status": "Done",
+            "category": "Web/Design",
+            "liveDemo": "https://component-garden.vercel.app/",
+            "image": "./assets/Project_icons/componentgarden.png",
+            "theme": {
+                "primary": "#ab00ff",
+                "background": "#31004a"
+            }
+        },
+        {
+            "name": "Recipe Finder",
+            "description": "An intelligent recipe discovery app that helps you find delicious meals based on ingredients you have. Powered by AI for smart recommendations.",
+            "url": "https://github.com/Shakiran-Nannyombi/recipe-finder",
+            "tags": [
+                "Web",
+                "AI",
+                "Python",
+                "API",
+                "Kiro"
+            ],
+            "status": "Building",
+            "category": "Web/AI",
+            "liveDemo": "https://recipeaiug.vercel.app/",
+            "image": "./assets/Project_icons/RecipeAI.png",
+            "theme": {
+                "primary": "#FFD059",
+                "background": "#B13D03"
+            }
+        },
+        {
+            "name": "UI Garden: The Sentient Design Arcade",
+            "description": "A gamified design playground with Gemini AI integration. Built with React, TypeScript, Vite, Framer Motion, and Gemini API.",
+            "url": "https://github.com/Shakiran-Nannyombi/ui-garden",
+            "tags": [
+                "Web",
+                "AI",
+                "React",
+                "TypeScript",
+                "Gemini",
+                "Google AI Studio"
+            ],
+            "status": "Done",
+            "category": "Web/AI",
+            "liveDemo": "https://ui-garden-orcin.vercel.app/",
+            "image": "./assets/Project_icons/uigarden.png",
+            "theme": {
+                "primary": "#7ED6D7",
+                "background": "#025E5C"
+            }
+        },
+        {
+            "name": "Lysi Properties",
+            "description": "Django property management system with an admin panel, tenant portal, and public-facing site for listings, leases, maintenance requests, and documents.",
+            "url": "https://github.com/Shakiran-Nannyombi/Lysi-properties",
+            "tags": [
+                "Web",
+                "Django",
+                "Python",
+                "Property Management",
+                "Tailwind CSS",
+                "SQLite"
+            ],
+            "status": "Building",
+            "category": "Web/Property",
+            "liveDemo": "https://lysi-properties.onrender.com",
+            "image": "./assets/Project_icons/lysiproperties.png",
+            "theme": {
+                "primary": "#1e3a8a",
+                "background": "#0f172a"
+            }
+        },
+        {
+            "name": "MidKey",
+            "description": "Zero-knowledge identity platform on Midnight blockchain that replaces passwords with cryptographic proofs \u2014 prove facts about yourself without revealing the underlying data.",
+            "url": "https://github.com/Shakiran-Nannyombi/MidKey-Midnight",
+            "tags": [
+                "Web",
+                "Web3",
+                "Zero-Knowledge",
+                "Midnight",
+                "Identity",
+                "Next.js",
+                "Keycloak"
+            ],
+            "status": "Building",
+            "category": "Web/Web3",
+            "liveDemo": "https://midkey-midnight.vercel.app/",
+            "image": "./assets/Project_icons/midkey.png",
+            "theme": {
+                "primary": "#3B82F6",
+                "background": "#0B1220"
+            }
+        },
+        {
+            "name": "Tabula",
+            "description": "Premium React banking interface for sovereign portfolio management \u2014 real-time telemetry, tonal high-contrast UI, and Gemini-assisted intelligence on Vite + Tailwind.",
+            "url": "https://github.com/Shakiran-Nannyombi/Tabula-Banking-System",
+            "tags": [
+                "Web",
+                "React",
+                "Vite",
+                "Tailwind CSS",
+                "Framer Motion",
+                "Gemini",
+                "FinTech"
+            ],
+            "status": "Building",
+            "category": "Web/FinTech",
+            "liveDemo": "https://tabula-banking-system.vercel.app/",
+            "image": "./assets/Project_icons/tabula.png",
+            "theme": {
+                "primary": "#646CFF",
+                "background": "#0A0C14"
+            }
+        },
+        {
+            "name": "X Growth Bot",
+            "description": "Flask web app that generates and schedules developer-focused X (Twitter) content \u2014 templates, timing reminders, content library, and a simple analytics dashboard.",
+            "url": "https://github.com/Shakiran-Nannyombi/X-bot",
+            "tags": [
+                "Web",
+                "Flask",
+                "Python",
+                "Tailwind CSS",
+                "Content",
+                "Twitter/X"
+            ],
+            "status": "Building",
+            "category": "Web/Productivity",
+            "liveDemo": "https://x-bot-whlp.onrender.com",
+            "image": "./assets/Project_icons/xbot.png",
+            "theme": {
+                "primary": "#38BDF8",
+                "background": "#0F172A"
+            }
+        }
+    ],
+    "lastUpdated": "2026-08-04T23:39:22Z"
 }
