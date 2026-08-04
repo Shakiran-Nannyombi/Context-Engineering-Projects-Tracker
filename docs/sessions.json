@@ -1,6 +1,48 @@
 {
     "projects": [
         {
+            "name": "Maps Workshop \u2014 AirQo x GDG",
+            "description": "Hands-on Google Maps JavaScript API workshop (AirQo x GDG Makerere): map basics, marker clustering, heatmaps, Places autocomplete, and GeoJSON overlays for visualizing pollution across Kampala.",
+            "url": "https://github.com/GDGoC-MUK/maps-workshop",
+            "tags": [
+                "Session",
+                "Tutorial",
+                "Google Maps",
+                "Workshop",
+                "GDG",
+                "AirQo"
+            ],
+            "status": "Done",
+            "category": "Sessions/Tutorials",
+            "liveDemo": "",
+            "image": "./assets/Project_icons/mapsworkshop.png",
+            "theme": {
+                "primary": "#116AFC",
+                "background": "#0A1A3A"
+            }
+        },
+        {
+            "name": "Spider-Man Tic-Tac-Toe / Ship Better Software with Kiro",
+            "description": "Spider-Man themed Tic-Tac-Toe built for the Ship Better Software with Kiro workshop (AWS Builder Group \u2013 Makerere University). Spec-driven Vue 3 + TypeScript + Tailwind: custom boards, hot-seat & vs CPU, persistence, leaderboard, and game history replay.",
+            "url": "https://github.com/awsclubmuk/kiro-tic-tac-toe-workshop",
+            "tags": [
+                "Session",
+                "Tutorial",
+                "Kiro",
+                "Vue",
+                "TypeScript",
+                "Workshop"
+            ],
+            "status": "Done",
+            "category": "Sessions/Tutorials",
+            "liveDemo": "https://kiro-tic-tac-toe-workshop.vercel.app/",
+            "image": "./assets/Project_icons/kirotic.png",
+            "theme": {
+                "primary": "#DC143C",
+                "background": "#070B12"
+            }
+        },
+        {
             "name": "FeedSense \u2014 Build with Gemma",
             "description": "Gemma hackathon starter kit: a privacy-first social feed agent that moderates content, analyzes sentiment, and auto-categorizes posts via Google AI Studio \u2014 Streamlit dashboard plus isolated ai_agent.py brain.",
             "url": "https://github.com/Shakiran-Nannyombi/feed-sense-app",
@@ -65,5 +107,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T21:29:31Z"
+    "lastUpdated": "2026-08-04T22:21:22Z"
 }

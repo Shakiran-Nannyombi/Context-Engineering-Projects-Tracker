@@ -1,6 +1,48 @@
 {
     "projects": [
         {
+            "name": "Lysi Properties",
+            "description": "Django property management system with an admin panel, tenant portal, and public-facing site for listings, leases, maintenance requests, and documents.",
+            "url": "https://github.com/Shakiran-Nannyombi/Lysi-properties",
+            "tags": [
+                "Web",
+                "Django",
+                "Python",
+                "Property Management",
+                "Tailwind CSS",
+                "SQLite"
+            ],
+            "status": "Done",
+            "category": "Web/Property",
+            "liveDemo": "",
+            "image": "./assets/Project_icons/lysiproperties.png",
+            "theme": {
+                "primary": "#1e3a8a",
+                "background": "#0f172a"
+            }
+        },
+        {
+            "name": "Kazi Skills",
+            "description": "Landing site for Kazi Skills \u2014 an AI-powered mobile-first skills marketplace helping African youth learn practical skills and earn from their phones. Built with Next.js 16, TypeScript, and Tailwind.",
+            "url": "https://github.com/Kazi-Skills/kazi-skills-website",
+            "tags": [
+                "Web",
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "EdTech",
+                "Landing"
+            ],
+            "status": "Done",
+            "category": "Web/EdTech",
+            "liveDemo": "https://www.kaziskills.com",
+            "image": "./assets/Project_icons/kaziskills.png",
+            "theme": {
+                "primary": "#AB43D0",
+                "background": "#1A0A24"
+            }
+        },
+        {
             "name": "OpenImpact",
             "description": "Charity receipts you can follow \u2014 donor to organisation to recipient with proof of use, privacy-preserving briefs, and a server-side trust score. Built by Team HackonChain with Vite/React, Supabase, and a Web3 settlement stub.",
             "url": "https://github.com/Tashbme005/HackonChain",
@@ -373,5 +415,5 @@
             }
         }
     ],
-    "lastUpdated": "2026-08-04T21:32:59Z"
+    "lastUpdated": "2026-08-04T22:21:22Z"
 }
