@@ -28,7 +28,6 @@
     /* Paper White surface in light mode */
     --color-bg-panel: #f5f5f5;
     --color-bg-black-alpha: rgba(0, 0, 0, 0.04);
-    --color-card-image-bg: #ffffff;
 
     /* Text */
     --color-text-main: #0A0A0A;
@@ -53,7 +52,6 @@ body.dark-theme {
     /* Ink Black */
     --color-bg-panel: #141414;
     --color-bg-black-alpha: rgba(255, 255, 255, 0.04);
-    --color-card-image-bg: #000000;
 
     /* Text — Paper White carries the copy */
     --color-text-main: #F7F7F7;
@@ -214,20 +212,16 @@ a {
 /* ============================================
    Header Component
    ============================================ */
-.site-chrome {
+header {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: var(--color-bg-dark);
-    border-bottom: 1px solid var(--border-glass);
-}
-
-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: var(--color-bg-dark);
     padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-glass);
     gap: 1.5rem;
 }
 
@@ -410,19 +404,11 @@ main {
 /* ============================================
    Tabs Navigation (Glassmorphism)
    ============================================ */
-.tabs-bar {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.75rem 1rem 1rem;
-    background: var(--color-bg-dark);
-}
-
 .tabs-nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     padding: 0.25rem;
     background: var(--color-bg-black-alpha);
     border-radius: 12px;
@@ -568,7 +554,8 @@ body.dark-theme .tab-btn.active {
     height: 160px;
     width: 100%;
     position: relative;
-    background-color: var(--color-card-image-bg);
+    background-color: var(--color-bg-panel);
+    border-bottom: 1px solid var(--border-glass);
     overflow: hidden;
     display: flex;
     align-items: center;
