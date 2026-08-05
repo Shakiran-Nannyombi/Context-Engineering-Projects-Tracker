@@ -331,6 +331,32 @@ function renderProjectCard(project) {
             imageContainer.style.display = 'none';
         };
 
+        const preferNatural =
+            project.category === 'Sessions/Tutorials' ||
+            project.imageFit === 'natural' ||
+            project.imageFit === 'cover';
+
+        if (preferNatural) {
+            imageContainer.classList.add('is-media');
+        }
+
+        img.onload = function () {
+            const w = img.naturalWidth || 0;
+            const h = img.naturalHeight || 0;
+            if (!w || !h) return;
+
+            const ratio = w / h;
+            imageContainer.classList.remove('is-logo', 'is-wide', 'is-tall');
+
+            if (preferNatural || ratio > 1.15) {
+                imageContainer.classList.add(ratio > 1.15 ? 'is-wide' : 'is-media');
+            } else if (ratio < 0.85) {
+                imageContainer.classList.add('is-tall');
+            } else {
+                imageContainer.classList.add('is-logo');
+            }
+        };
+
         imageContainer.appendChild(img);
         card.appendChild(imageContainer);
     }
