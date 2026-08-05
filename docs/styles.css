@@ -6,14 +6,17 @@
    ============================================ */
 :root {
     /* Brand Palette — Light mode */
-    --color-primary: #000000;               /* True Black — text on white */
+    --color-primary: #000000;
+    /* True Black — text on white */
     --color-primary-light: rgba(0, 0, 0, 0.08);
     --color-primary-alpha-10: rgba(0, 0, 0, 0.08);
     --color-primary-alpha-20: rgba(0, 0, 0, 0.15);
 
     /* Signal Green system */
-    --color-accent: #1FAE79;                /* Deep Green — better contrast on white */
-    --color-accent-hover: #17916A;          /* Darker green for hover states */
+    --color-accent: #1FAE79;
+    /* Deep Green — better contrast on white */
+    --color-accent-hover: #17916A;
+    /* Darker green for hover states */
     --color-accent-alpha-10: rgba(31, 174, 121, 0.08);
     --color-accent-alpha-20: rgba(31, 174, 121, 0.18);
 
@@ -21,12 +24,15 @@
     --color-accent-blue: #1FAE79;
 
     /* Backgrounds */
-    --color-bg-dark: #ffffff;               /* Paper White surface in light mode */
+    --color-bg-dark: #ffffff;
+    /* Paper White surface in light mode */
     --color-bg-panel: #f5f5f5;
     --color-bg-black-alpha: rgba(0, 0, 0, 0.04);
+    --color-card-image-bg: #ffffff;
 
     /* Text */
-    --color-text-main: #0A0A0A;             /* Ink Black */
+    --color-text-main: #0A0A0A;
+    /* Ink Black */
     --color-text-muted: #4a4a4a;
     --color-text-dim: #6e6e6e;
 
@@ -43,17 +49,21 @@
 
 body.dark-theme {
     /* Backgrounds — Ink Black dominant */
-    --color-bg-dark: #0A0A0A;              /* Ink Black */
+    --color-bg-dark: #0A0A0A;
+    /* Ink Black */
     --color-bg-panel: #141414;
     --color-bg-black-alpha: rgba(255, 255, 255, 0.04);
+    --color-card-image-bg: #000000;
 
     /* Text — Paper White carries the copy */
-    --color-text-main: #F7F7F7;            /* Paper White */
+    --color-text-main: #F7F7F7;
+    /* Paper White */
     --color-text-muted: #9a9a9a;
     --color-text-dim: #6e6e6e;
 
     /* Signal Green pops on dark */
-    --color-accent: #2EE6A6;               /* Signal Green */
+    --color-accent: #2EE6A6;
+    /* Signal Green */
     --color-accent-hover: #25C98F;
     --color-accent-alpha-10: rgba(46, 230, 166, 0.08);
     --color-accent-alpha-20: rgba(46, 230, 166, 0.18);
@@ -143,6 +153,7 @@ body.dark-theme {
     from {
         background-position: 0px 220px, 3px 220px, 151.5px 337.5px, 25px 24px, 28px 24px, 176.5px 150px, 50px 16px, 53px 16px, 201.5px 91px, 75px 224px, 78px 224px, 226.5px 230.5px, 100px 19px, 103px 19px, 251.5px 121px, 125px 120px, 128px 120px, 276.5px 187px, 150px 31px, 153px 31px, 301.5px 120.5px, 175px 235px, 178px 235px, 326.5px 384.5px, 200px 121px, 203px 121px, 351.5px 228.5px, 225px 224px, 228px 224px, 376.5px 364.5px, 250px 26px, 253px 26px, 401.5px 105px, 275px 75px, 278px 75px, 426.5px 180px;
     }
+
     to {
         background-position: 0px 6800px, 3px 6800px, 151.5px 6917.5px, 25px 13632px, 28px 13632px, 176.5px 13758px, 50px 5416px, 53px 5416px, 201.5px 5491px, 75px 17175px, 78px 17175px, 226.5px 17301.5px, 100px 5119px, 103px 5119px, 251.5px 5221px, 125px 8428px, 128px 8428px, 276.5px 8495px, 150px 9876px, 153px 9876px, 301.5px 9965.5px, 175px 13391px, 178px 13391px, 326.5px 13540.5px, 200px 14741px, 203px 14741px, 351.5px 14848.5px, 225px 18770px, 228px 18770px, 376.5px 18910.5px, 250px 5082px, 253px 5082px, 401.5px 5161px, 275px 6375px, 278px 6375px, 426.5px 6480px;
     }
@@ -203,16 +214,20 @@ a {
 /* ============================================
    Header Component
    ============================================ */
-header {
+.site-chrome {
     position: sticky;
     top: 0;
     z-index: 50;
+    background: var(--color-bg-dark);
+    border-bottom: 1px solid var(--border-glass);
+}
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: var(--color-bg-dark);
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid var(--border-glass);
     gap: 1.5rem;
 }
 
@@ -280,18 +295,18 @@ header h1 {
         gap: 1rem;
         padding: 1rem 1.25rem;
     }
-    
+
     .header-brand {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.75rem;
         width: 100%;
     }
-    
+
     .header-titles {
         gap: 0.35rem;
     }
-    
+
     .header-actions {
         width: 100%;
         justify-content: space-between;
@@ -395,11 +410,19 @@ main {
 /* ============================================
    Tabs Navigation (Glassmorphism)
    ============================================ */
+.tabs-bar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem 1rem;
+    background: var(--color-bg-dark);
+}
+
 .tabs-nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     padding: 0.25rem;
     background: var(--color-bg-black-alpha);
     border-radius: 12px;
@@ -545,7 +568,7 @@ body.dark-theme .tab-btn.active {
     height: 160px;
     width: 100%;
     position: relative;
-    background-color: var(--color-bg-black-alpha);
+    background-color: var(--color-card-image-bg);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -781,7 +804,8 @@ footer a:hover {
     border-left: 3px solid var(--color-accent-blue);
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
-    order: 2.5; /* Position between tags and description */
+    order: 2.5;
+    /* Position between tags and description */
     color: var(--color-text-main);
 }
 
